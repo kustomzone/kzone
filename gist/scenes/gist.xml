@@ -1,0 +1,744 @@
+<scene>
+  <spawn position="0 0 0" />
+
+    <billboard position="5 0.75 -5" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-0.png" style="max-width: 100%" />
+		  <br>
+          Lovely Love
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#DB3E3E;' scale='0.4 0.4 0.4' position='6.2 0.2 -5' /><box style='color:#030000;' scale='0.4 0.4 0.4' position='6.2 0.6 -5' /><box style='color:#E97070;' scale='0.4 0.4 0.4' position='6.2 1.0 -5' /><box style='color:#FEBCA3;' scale='0.4 0.4 0.4' position='6.2 1.4 -5' /><box style='color:#6E0E0E;' scale='0.4 0.4 0.4' position='6.2 1.8 -5' />    <billboard position="10 0.75 -5" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-1.png" style="max-width: 100%" />
+		  <br>
+          Indie Lemon
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#D7E8D5;' scale='0.4 0.4 0.4' position='11.2 0.2 -5' /><box style='color:#E6F0AF;' scale='0.4 0.4 0.4' position='11.2 0.6 -5' /><box style='color:#E8ED76;' scale='0.4 0.4 0.4' position='11.2 1.0 -5' /><box style='color:#FFCD57;' scale='0.4 0.4 0.4' position='11.2 1.4 -5' /><box style='color:#4A3A47;' scale='0.4 0.4 0.4' position='11.2 1.8 -5' />    <billboard position="15 0.75 -5" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-2.png" style="max-width: 100%" />
+		  <br>
+          Giant Goldfish
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#69D2E7;' scale='0.4 0.4 0.4' position='16.2 0.2 -5' /><box style='color:#A7DBD8;' scale='0.4 0.4 0.4' position='16.2 0.6 -5' /><box style='color:#E0E4CC;' scale='0.4 0.4 0.4' position='16.2 1.0 -5' /><box style='color:#F38630;' scale='0.4 0.4 0.4' position='16.2 1.4 -5' /><box style='color:#FA6900;' scale='0.4 0.4 0.4' position='16.2 1.8 -5' />    <billboard position="20 0.75 -5" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-3.png" style="max-width: 100%" />
+		  <br>
+          (◕〝◕)
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#FE4365;' scale='0.4 0.4 0.4' position='21.2 0.2 -5' /><box style='color:#FC9D9A;' scale='0.4 0.4 0.4' position='21.2 0.6 -5' /><box style='color:#F9CDAD;' scale='0.4 0.4 0.4' position='21.2 1.0 -5' /><box style='color:#C8C8A9;' scale='0.4 0.4 0.4' position='21.2 1.4 -5' /><box style='color:#83AF9B;' scale='0.4 0.4 0.4' position='21.2 1.8 -5' />    <billboard position="25 0.75 -5" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-4.png" style="max-width: 100%" />
+		  <br>
+          Thought Provoking
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#ECD078;' scale='0.4 0.4 0.4' position='26.2 0.2 -5' /><box style='color:#D95B43;' scale='0.4 0.4 0.4' position='26.2 0.6 -5' /><box style='color:#C02942;' scale='0.4 0.4 0.4' position='26.2 1.0 -5' /><box style='color:#542437;' scale='0.4 0.4 0.4' position='26.2 1.4 -5' /><box style='color:#53777A;' scale='0.4 0.4 0.4' position='26.2 1.8 -5' />    <billboard position="5 0.75 -10" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-5.png" style="max-width: 100%" />
+		  <br>
+          cheer up emo kid
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#556270;' scale='0.4 0.4 0.4' position='6.2 0.2 -10' /><box style='color:#4ECDC4;' scale='0.4 0.4 0.4' position='6.2 0.6 -10' /><box style='color:#C7F464;' scale='0.4 0.4 0.4' position='6.2 1.0 -10' /><box style='color:#FF6B6B;' scale='0.4 0.4 0.4' position='6.2 1.4 -10' /><box style='color:#C44D58;' scale='0.4 0.4 0.4' position='6.2 1.8 -10' />    <billboard position="10 0.75 -10" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-6.png" style="max-width: 100%" />
+		  <br>
+          let them eat cake
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#774F38;' scale='0.4 0.4 0.4' position='11.2 0.2 -10' /><box style='color:#E08E79;' scale='0.4 0.4 0.4' position='11.2 0.6 -10' /><box style='color:#F1D4AF;' scale='0.4 0.4 0.4' position='11.2 1.0 -10' /><box style='color:#ECE5CE;' scale='0.4 0.4 0.4' position='11.2 1.4 -10' /><box style='color:#C5E0DC;' scale='0.4 0.4 0.4' position='11.2 1.8 -10' />    <billboard position="15 0.75 -10" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-7.png" style="max-width: 100%" />
+		  <br>
+          Terra?
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#E8DDCB;' scale='0.4 0.4 0.4' position='16.2 0.2 -10' /><box style='color:#CDB380;' scale='0.4 0.4 0.4' position='16.2 0.6 -10' /><box style='color:#036564;' scale='0.4 0.4 0.4' position='16.2 1.0 -10' /><box style='color:#033649;' scale='0.4 0.4 0.4' position='16.2 1.4 -10' /><box style='color:#031634;' scale='0.4 0.4 0.4' position='16.2 1.8 -10' />    <billboard position="20 0.75 -10" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-8.png" style="max-width: 100%" />
+		  <br>
+          (◕ ” ◕)
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#490A3D;' scale='0.4 0.4 0.4' position='21.2 0.2 -10' /><box style='color:#BD1550;' scale='0.4 0.4 0.4' position='21.2 0.6 -10' /><box style='color:#E97F02;' scale='0.4 0.4 0.4' position='21.2 1.0 -10' /><box style='color:#F8CA00;' scale='0.4 0.4 0.4' position='21.2 1.4 -10' /><box style='color:#8A9B0F;' scale='0.4 0.4 0.4' position='21.2 1.8 -10' />    <billboard position="25 0.75 -10" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-9.png" style="max-width: 100%" />
+		  <br>
+          i demand a pancake
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#594F4F;' scale='0.4 0.4 0.4' position='26.2 0.2 -10' /><box style='color:#547980;' scale='0.4 0.4 0.4' position='26.2 0.6 -10' /><box style='color:#45ADA8;' scale='0.4 0.4 0.4' position='26.2 1.0 -10' /><box style='color:#9DE0AD;' scale='0.4 0.4 0.4' position='26.2 1.4 -10' /><box style='color:#E5FCC2;' scale='0.4 0.4 0.4' position='26.2 1.8 -10' />    <billboard position="5 0.75 -15" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-10.png" style="max-width: 100%" />
+		  <br>
+          Ocean Five
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#00A0B0;' scale='0.4 0.4 0.4' position='6.2 0.2 -15' /><box style='color:#6A4A3C;' scale='0.4 0.4 0.4' position='6.2 0.6 -15' /><box style='color:#CC333F;' scale='0.4 0.4 0.4' position='6.2 1.0 -15' /><box style='color:#EB6841;' scale='0.4 0.4 0.4' position='6.2 1.4 -15' /><box style='color:#EDC951;' scale='0.4 0.4 0.4' position='6.2 1.8 -15' />    <billboard position="10 0.75 -15" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-11.png" style="max-width: 100%" />
+		  <br>
+          LoversInJapan
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#E94E77;' scale='0.4 0.4 0.4' position='11.2 0.2 -15' /><box style='color:#D68189;' scale='0.4 0.4 0.4' position='11.2 0.6 -15' /><box style='color:#C6A49A;' scale='0.4 0.4 0.4' position='11.2 1.0 -15' /><box style='color:#C6E5D9;' scale='0.4 0.4 0.4' position='11.2 1.4 -15' /><box style='color:#F4EAD5;' scale='0.4 0.4 0.4' position='11.2 1.8 -15' />    <billboard position="15 0.75 -15" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-12.png" style="max-width: 100%" />
+		  <br>
+          Good Friends
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#D9CEB2;' scale='0.4 0.4 0.4' position='16.2 0.2 -15' /><box style='color:#948C75;' scale='0.4 0.4 0.4' position='16.2 0.6 -15' /><box style='color:#D5DED9;' scale='0.4 0.4 0.4' position='16.2 1.0 -15' /><box style='color:#7A6A53;' scale='0.4 0.4 0.4' position='16.2 1.4 -15' /><box style='color:#99B2B7;' scale='0.4 0.4 0.4' position='16.2 1.8 -15' />    <billboard position="20 0.75 -15" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-13.png" style="max-width: 100%" />
+		  <br>
+          w o r d l e s s .
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#FFFFFF;' scale='0.4 0.4 0.4' position='21.2 0.2 -15' /><box style='color:#CBE86B;' scale='0.4 0.4 0.4' position='21.2 0.6 -15' /><box style='color:#F2E9E1;' scale='0.4 0.4 0.4' position='21.2 1.0 -15' /><box style='color:#1C140D;' scale='0.4 0.4 0.4' position='21.2 1.4 -15' /><box style='color:#CBE86B;' scale='0.4 0.4 0.4' position='21.2 1.8 -15' />    <billboard position="25 0.75 -15" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-14.png" style="max-width: 100%" />
+		  <br>
+          Compatible
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#3FB8AF;' scale='0.4 0.4 0.4' position='26.2 0.2 -15' /><box style='color:#7FC7AF;' scale='0.4 0.4 0.4' position='26.2 0.6 -15' /><box style='color:#DAD8A7;' scale='0.4 0.4 0.4' position='26.2 1.0 -15' /><box style='color:#FF9E9D;' scale='0.4 0.4 0.4' position='26.2 1.4 -15' /><box style='color:#FF3D7F;' scale='0.4 0.4 0.4' position='26.2 1.8 -15' />    <billboard position="5 0.75 -20" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-15.png" style="max-width: 100%" />
+		  <br>
+          Curiosity Killed
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#EFFFCD;' scale='0.4 0.4 0.4' position='6.2 0.2 -20' /><box style='color:#DCE9BE;' scale='0.4 0.4 0.4' position='6.2 0.6 -20' /><box style='color:#555152;' scale='0.4 0.4 0.4' position='6.2 1.0 -20' /><box style='color:#2E2633;' scale='0.4 0.4 0.4' position='6.2 1.4 -20' /><box style='color:#99173C;' scale='0.4 0.4 0.4' position='6.2 1.8 -20' />    <billboard position="10 0.75 -20" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-16.png" style="max-width: 100%" />
+		  <br>
+          dream magnet
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#343838;' scale='0.4 0.4 0.4' position='11.2 0.2 -20' /><box style='color:#005F6B;' scale='0.4 0.4 0.4' position='11.2 0.6 -20' /><box style='color:#008C9E;' scale='0.4 0.4 0.4' position='11.2 1.0 -20' /><box style='color:#00B4CC;' scale='0.4 0.4 0.4' position='11.2 1.4 -20' /><box style='color:#00DFFC;' scale='0.4 0.4 0.4' position='11.2 1.8 -20' />    <billboard position="15 0.75 -20" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-17.png" style="max-width: 100%" />
+		  <br>
+          clairedelune
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#413E4A;' scale='0.4 0.4 0.4' position='16.2 0.2 -20' /><box style='color:#73626E;' scale='0.4 0.4 0.4' position='16.2 0.6 -20' /><box style='color:#B38184;' scale='0.4 0.4 0.4' position='16.2 1.0 -20' /><box style='color:#F0B49E;' scale='0.4 0.4 0.4' position='16.2 1.4 -20' /><box style='color:#F7E4BE;' scale='0.4 0.4 0.4' position='16.2 1.8 -20' />    <billboard position="20 0.75 -20" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-18.png" style="max-width: 100%" />
+		  <br>
+          coup de grâce
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#99B898;' scale='0.4 0.4 0.4' position='21.2 0.2 -20' /><box style='color:#FECEA8;' scale='0.4 0.4 0.4' position='21.2 0.6 -20' /><box style='color:#FF847C;' scale='0.4 0.4 0.4' position='21.2 1.0 -20' /><box style='color:#E84A5F;' scale='0.4 0.4 0.4' position='21.2 1.4 -20' /><box style='color:#2A363B;' scale='0.4 0.4 0.4' position='21.2 1.8 -20' />    <billboard position="25 0.75 -20" rotation="0 0 0" scale="1.2 1.2 0.05">
+      <![CDATA[
+        <center style="margin-top: 54px; font-size: 3em">
+          <img src="/images/gist-19.png" style="max-width: 100%" />
+		  <br>
+          Dance To Forget
+		  <br>
+		  <p style="font-size: 1em"> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
+		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+		  <br>
+		  <script>
+		   // dynamically load a Gist without an iframe:
+		   
+		   loadGist(element, 5446951);
+		   
+		   alert(element);
+  
+  // temp
+  function loadGist(element, gistId) {
+    var callbackName = "gist_callback";
+    window[callbackName] = function (gistData) {
+        delete window[callbackName];
+        var html = '<link rel="stylesheet" href="' + escapeHtml(gistData.stylesheet) + '"></link>';
+        html += gistData.div;
+        element.innerHTML = html;
+        script.parentNode.removeChild(script);
+    };
+    var script = document.createElement("script");
+    script.setAttribute("src", "https://gist.github.com/" + gistId + ".json?callback=" + callbackName);
+    document.body.appendChild(script);
+  }
+          </script>
+		
+        </center>
+      ]]>
+    </billboard>
+	
+<box style='color:#FF4E50;' scale='0.4 0.4 0.4' position='26.2 0.2 -20' /><box style='color:#FC913A;' scale='0.4 0.4 0.4' position='26.2 0.6 -20' /><box style='color:#F9D423;' scale='0.4 0.4 0.4' position='26.2 1.0 -20' /><box style='color:#EDE574;' scale='0.4 0.4 0.4' position='26.2 1.4 -20' /><box style='color:#E1F5C4;' scale='0.4 0.4 0.4' position='26.2 1.8 -20' /></scene>

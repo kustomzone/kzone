@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ 
+<scene>
+  <spawn position="10 10 10" />
+  <box id="home" color="#ff00aa" position='0 10 0' />
+  <model src="/blah.obj" position="1 2 3" />
+  <script>
+    document.addEventListener("ready", function(event) {
+      "Hello world";
+    });
+  </script>
+  <billboard>
+    <![CDATA[
+      <h1>Welcome to scenevr</h1>
+
+      <p>
+        This is stuff and things.
+      </p>
+    ]]>
+  </billboard>
+  <!-- Link to next scene -->
+  <link href="/test.xml" position="3 4 5" />
+  <skybox src="/blah/blah" />
+  <audio src="/sounds/drone-sweet.mp3" ambient="true" />
+  <fog style="color: #fff" near="100" far="1000" />
+</scene>
