@@ -1,4 +1,4 @@
-Vector = require('../lib/vector.js')
+Vector = require('../js/vector.js')
 
 describe 'vector', ->
   it 'should set and get', ->

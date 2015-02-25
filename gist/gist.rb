@@ -54,8 +54,8 @@ json.each do |json|
   puts " * #{uri.to_s}"
   
   if DOWNLOAD
-    `curl #{uri.to_s} -s -o scenes/images/#{SITE}-#{i}#{extension}` || next
-    `mogrify -resize 500x450 scenes/images/#{SITE}-#{i}#{extension}` || next
+    `curl #{uri.to_s} -s -o scene/images/#{SITE}-#{i}#{extension}` || next
+    `mogrify -resize 500x450 scene/images/#{SITE}-#{i}#{extension}` || next
   end
   
   x = i % 5
@@ -64,7 +64,7 @@ json.each do |json|
   v  = GMath3D::Vector3.new(x, 0.05, -z) * 5
   v += GMath3D::Vector3.new(5, 0.5, -5)
   
-  height = `identify scenes/images/#{SITE}-#{i}#{extension}`.match(/x(\d+)/)[1].to_i + 50
+  height = `identify scene/images/#{SITE}-#{i}#{extension}`.match(/x(\d+)/)[1].to_i + 50
   margin = (512 - height) / 2
 
   xml += <<-EOF
@@ -120,7 +120,7 @@ end
 
 xml += "</scene>"
 
-File.open("./scenes/gist.xml", "w") { |f| f.write xml }
+File.open("./scene/gist.xml", "w") { |f| f.write xml }
 
 puts "Visit /gist.xml to see the gallery."
 

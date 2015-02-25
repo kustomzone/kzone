@@ -1,6 +1,6 @@
-Node = require('../lib/node')
-HTMLElement = require("../lib/dom-lite").HTMLElement
-Document = require('../lib/document')
+Node 		= require('../js/node')
+HTMLElement = require("../js/dom-lite").HTMLElement
+Document 	= require('../js/document')
 
 ownerDocument = Document.createDocument()
 

@@ -5,10 +5,10 @@ var IndexScene, PORT, Reflector, Scene, Server, WebsocketServer, cors, express, 
 
 var _ = 			require('underscore');
 
-Reflector = 		require('./lib/reflector');
-WebsocketServer = 	require('./lib/websocket_server');
-Scene = 			require('./elements/scene');
-IndexScene = 		require('./lib/index_scene');
+Reflector = 		require('./js/reflector');
+WebsocketServer = 	require('./js/websocket_server');
+Scene = 			require('./js/scene');
+IndexScene = 		require('./js/index_scene');
 
 path = 				require('path');
 fs = 				require('fs');
@@ -17,7 +17,7 @@ express = 			require('express');
 http = 				require("http");
 cors = 				require('cors');
 
-PORT = process.env.PORT || 8080;
+PORT = process.env.PORT || 9001;
 
 function Server(folder, port) {
   var httpServer;

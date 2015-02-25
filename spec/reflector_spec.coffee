@@ -1,4 +1,4 @@
-Reflector = require('../lib/reflector')
+Reflector = require('../js/reflector')
 
 describe 'constructor', ->
   it 'should create', ->

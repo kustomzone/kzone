@@ -8,23 +8,19 @@
 
 OS: Verified running on Windows 7 with Node and NPM.
 
-### Installing and running the server
-1. Clone this repo: https://github.com/bnolan/scenevr.git
-1. `cd scenevr`
-1. `npm install`
-1. `run bat`
-
-Note: *you can replace hello.xml with any of the demo files*
-
-### Installing and running the client
-In a new console window, and in a new directory:
-
-1. `cd scripts`
+### Installing and running the server and client
+1. Clone this repo: https://github.com/kustomzone/kzone.git
+1. `cd kzone`
 1. `npm install`
 1. `npm install -g coffee-script`
-1. `run bat`
+1. `run_server`
+1. `run_client`
 
-You should now be able to open `localhost:9000` in your browser to see a list of scenes. You can edit these scenes in your favourite text editor, and when you hit save, the scene will automatically reload in your client.
+( testing ... `npm install` for client modules...?)
+
+Open `localhost:9000/?connect=localhost:8080/test.xml` in your browser.
+
+Note: *you can replace test.xml with any of the demo xml files*
 
 ---
 
@@ -46,4 +42,5 @@ gists @ github.com
 
 ## To Do 
 
+### Fix background.
 ### Slash and burn.

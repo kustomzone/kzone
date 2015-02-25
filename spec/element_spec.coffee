@@ -1,7 +1,7 @@
-Element = require('../lib/element')
-Document = require('../lib/document')
-Vector = require('../lib/vector')
-Euler = require('../lib/euler')
+Element 	= require('../js/element')
+Document 	= require('../js/document')
+Vector 		= require('../js/vector')
+Euler 		= require('../js/euler')
 
 xml = (e) ->
   s = new Element 'scene'

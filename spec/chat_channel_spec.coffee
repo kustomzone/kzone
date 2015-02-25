@@ -1,5 +1,5 @@
-ChatChannel = require('../lib/chat_channel')
-Scene = require('../elements/scene')
+ChatChannel = require('../js/chat_channel')
+Scene 		= require('../js/scene')
 
 describe 'constructor', ->
   it 'should create', ->

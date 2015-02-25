@@ -1,23 +1,34 @@
 {
-  "name": "scenevr",
-  "version": "0.1.3",
+  "name": "kzone",
+  "version": "1.0.0",
   "description": "3D Web-Builder",
   "homepage": "http://kustomzone.com",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kustomzone/scenevr.git"
+    "url": "git://github.com/kustomzone/kzone.git"
   },
   "dependencies": {
-    "ws": "~0.6.3",
-    "three": "0.66.2",
-    "uuid": "~2.0.1",
-    "underscore": "~1.7.0",
-    "htmlparser2": "~3.8.2",
+    "browserify-jade": "~0.1.2",
+	"browserify-middleware": "~4.1.0",
+    "cannon": "~0.6.1",
+    "coffeeify": "~0.7.0",
+	"coffee-script": "~1.8.0",
+    "color": "~0.7.3",
+	"cors": "~2.5.2",
     "express": "~4.10.2",
-    "cors": "~2.5.2",
-    "coffee-script": "~1.8.0",
-    "glob": "~4.2.1",
-    "xmlbuilder": "~2.4.5",
+	"express-less": "0.0.6",
+	"glob": "~4.2.1",
+	"htmlparser2": "~3.8.2",
+    "howler": "^1.1.25",
+    
+    "three": "0.66.2",
+    "tween.js": "~0.14.0",
+	"underscore": "~1.7.0",
+    "uri-js": "~1.4.2",
+	"uuid": "~2.0.1",
+	"wolfy87-eventemitter": "~4.2.9",
+	"ws": "~0.6.3",
+	"xmlbuilder": "~2.4.5",
     "xhr2":"*"
   },
   "devDependencies": {
@@ -25,6 +36,7 @@
   },
   "bin": "./server.js",
   "scripts": {
-    "test": "jasmine-node --verbose --captureExceptions --coffee spec/"
+    "test": "jasmine-node --verbose --captureExceptions --coffee spec/",
+	"start": "coffee server.coffee"
   }
 }
