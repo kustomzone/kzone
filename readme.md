@@ -18,7 +18,7 @@ OS: Verified running on Windows 7 with Node and NPM.
 
 ( testing ... `npm install` for client modules...?)
 
-Open `localhost:9000/?connect=localhost:8080/test.xml` in your browser.
+Open `localhost:9000/?connect=localhost:9001/test.xml` in your browser.
 
 Note: *you can replace test.xml with any of the demo xml files*
 
