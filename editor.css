@@ -1,0 +1,161 @@
+@font-face {
+	font-family: 'inconsolata';
+	src: url('files/inconsolata.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* body { */
+/* 	margin: 0px; */
+/* 	overflow: hidden; */
+/* } */
+
+.button {
+	font-family: Arial;
+	font-size: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	color: rgba(0,0,0,0.5);
+	border: 1px solid rgba(0,0,0,0.25);
+	background-color: rgba(255,255,255,0.5);
+
+	margin: 2px;
+	padding: 8px 10px;
+
+	cursor: pointer;
+}
+
+.button:hover {
+	color: rgba(255,255,255,0.75);
+	background-color: rgba(0,0,0,0.75);
+}
+
+input {
+	cursor: pointer;
+}
+
+.dialog {
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid rgba(0,0,0,0.25);
+  padding: 8px 8px 4px;
+  max-height: 560px;
+  overflow-y: auto;
+  position: absolute;
+  right: 15px;
+  top: 60px;
+}
+
+.dialog label {
+	font-family: Arial;
+	font-size: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: rgba(0,0,0,0.5);
+}
+
+.dialog input[type=text] {
+	border: 3px solid rgba(0,0,0,0.25);
+}
+
+.dialog a {
+	font-family: Arial;
+	font-size: 12px;
+	color: rgba(0,0,0,0.5);
+}
+
+.cancel {
+  margin: 2px;
+  text-align: right;
+}
+
+ul.menu {
+  margin: 0px;
+  padding: 5px;
+	border: 1px solid rgba(0,0,0,0.25);
+
+	font-family: Arial;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	color: rgba(0,0,0,0.5);
+	background-color: rgba(255,255,255,0.5);
+}
+
+ul.menu li {
+  display: block;
+  padding: 4px;
+
+	cursor: pointer;
+}
+
+
+/**/
+
+#editor, #editor_embed {
+	// font-family: inconsolata;
+	background-color: rgba(255,255,255,0.0);
+}
+
+#ice {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+#editor_embed, #preview_embed {
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  top: 0;
+}
+
+#editor, #preview {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#editor .ace_selection, #editor_embed .ace_selection {
+	background: rgba(0,0,255,0.1);
+}
+
+#editor .ace_content, #editor_embed .ace_content {
+	background: rgba(255,255,255,0.75);
+}
+
+#editor .ace_scroller, #editor_embed .ace_scroller {
+  background-color: rgba(255,255,255,0.0);
+}
+
+#popup {
+  position: absolute;
+  color: rgb(235,235,235);
+  padding: 40px 20px 20px 20px;
+  background-color: rgba(24, 24, 24, 0.95);
+  border-radius: 2px;
+  z-index: 101;
+}
+
+#popup h1 {
+  margin: 0px 0px 5px;
+  font-size: 100%;
+}
+
+#popup a {
+  color: rgb(235,235,235);
+}
+
+#popup .instructions, #popup label {
+  font-size: 75%;
+  text-align: right;
+  margin-top: 5px;
+}
+
+#projects-dialog a.delete {
+  color: rgb(180, 180, 180);
+}
