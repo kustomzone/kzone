@@ -12,10 +12,9 @@ Contact [bnolan@gmail.com](mailto:bnolan@gmail.com). Follow development at [@sce
 
 ## Installation
 
-Prerequisites: make sure you have the latest version of Node and NPM installed.
-OS: Verified running on Windows 7.
+OS: Verified running on Windows 7 with Node and NPM.
 
-### Running the server
+### Installing and running the server
 1. Clone this repo: https://github.com/bnolan/scenevr.git
 1. `cd scenevr`
 1. `npm install`
@@ -23,7 +22,7 @@ OS: Verified running on Windows 7.
 
 Note: *you can replace hello.xml with any of the demo files*
 
-### Running the client
+### Installing and running the client
 In a new console window, and in a new directory:
 
 1. `cd scripts`
