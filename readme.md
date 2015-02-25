@@ -30,14 +30,13 @@ You should now be able to open `localhost:9000` in your browser to see a list of
 
 ## Credits
 
+### 3D scene server 
+
+bnolan @ scenevr.com
 
 ### Code Builder (work in progress)
 
 kidoo @ kustomzone.com
-
-### 3D scene server 
-
-bnolan @ scenevr.com
 
 ### Hosting
 
