@@ -1,602 +1,2942 @@
 <scene>
   <spawn position="0 0 0" />
 
-    <billboard position="5 0.75 -5" rotation="0 0 0" scale="1.2 1.2 0.05">
+    <billboard position="5 1.25 -5" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-0.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          Lovely Love
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-0.png' style='max-width: 100%; height: 60px;'> Lovely Love
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (0== 1) { alert('hello world =' + 0); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (0== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (0== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (0== 3) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			
+			if (0== 4) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			
+			if (0== 5) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			
+			if (0== 6) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			
+			if (0== 7) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			
+			if (0== 8) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			
+			if (0== 9) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			
+			if (0== 10) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			
+			if (0== 11) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			
+			if (0== 12) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			
+			if (0== 13) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			
+			if (0== 14) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			if (0== 15) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			if (0== 16) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			if (0== 17) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			
+			if (0== 18) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#DB3E3E;' scale='0.4 0.4 0.4' position='6.2 0.2 -5' /><box style='color:#030000;' scale='0.4 0.4 0.4' position='6.2 0.6 -5' /><box style='color:#E97070;' scale='0.4 0.4 0.4' position='6.2 1.0 -5' /><box style='color:#FEBCA3;' scale='0.4 0.4 0.4' position='6.2 1.4 -5' /><box style='color:#6E0E0E;' scale='0.4 0.4 0.4' position='6.2 1.8 -5' />    <billboard position="10 0.75 -5" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#DB3E3E;' scale='0.4 0.4 0.4' position='6.2 0.2 -5' /><box style='color:#030000;' scale='0.4 0.4 0.4' position='6.2 0.6 -5' /><box style='color:#E97070;' scale='0.4 0.4 0.4' position='6.2 1.0 -5' /><box style='color:#FEBCA3;' scale='0.4 0.4 0.4' position='6.2 1.4 -5' /><box style='color:#6E0E0E;' scale='0.4 0.4 0.4' position='6.2 1.8 -5' />    <billboard position="10 1.25 -5" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-1.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          Indie Lemon
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-1.png' style='max-width: 100%; height: 60px;'> Indie Lemon
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (1== 1) { alert('hello world =' + 1); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (1== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (1== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (1== 3) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			
+			if (1== 4) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			
+			if (1== 5) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			
+			if (1== 6) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			
+			if (1== 7) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			
+			if (1== 8) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			
+			if (1== 9) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			
+			if (1== 10) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			
+			if (1== 11) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			
+			if (1== 12) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			
+			if (1== 13) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			
+			if (1== 14) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			if (1== 15) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			if (1== 16) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			if (1== 17) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			
+			if (1== 18) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#D7E8D5;' scale='0.4 0.4 0.4' position='11.2 0.2 -5' /><box style='color:#E6F0AF;' scale='0.4 0.4 0.4' position='11.2 0.6 -5' /><box style='color:#E8ED76;' scale='0.4 0.4 0.4' position='11.2 1.0 -5' /><box style='color:#FFCD57;' scale='0.4 0.4 0.4' position='11.2 1.4 -5' /><box style='color:#4A3A47;' scale='0.4 0.4 0.4' position='11.2 1.8 -5' />    <billboard position="15 0.75 -5" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#D7E8D5;' scale='0.4 0.4 0.4' position='11.2 0.2 -5' /><box style='color:#E6F0AF;' scale='0.4 0.4 0.4' position='11.2 0.6 -5' /><box style='color:#E8ED76;' scale='0.4 0.4 0.4' position='11.2 1.0 -5' /><box style='color:#FFCD57;' scale='0.4 0.4 0.4' position='11.2 1.4 -5' /><box style='color:#4A3A47;' scale='0.4 0.4 0.4' position='11.2 1.8 -5' />    <billboard position="15 1.25 -5" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-2.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          Giant Goldfish
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-2.png' style='max-width: 100%; height: 60px;'> Giant Goldfish
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (2== 1) { alert('hello world =' + 2); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (2== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (2== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (2== 3) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			
+			if (2== 4) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			
+			if (2== 5) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			
+			if (2== 6) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			
+			if (2== 7) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			
+			if (2== 8) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			
+			if (2== 9) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			
+			if (2== 10) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			
+			if (2== 11) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			
+			if (2== 12) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			
+			if (2== 13) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			
+			if (2== 14) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			if (2== 15) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			if (2== 16) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			if (2== 17) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			
+			if (2== 18) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#69D2E7;' scale='0.4 0.4 0.4' position='16.2 0.2 -5' /><box style='color:#A7DBD8;' scale='0.4 0.4 0.4' position='16.2 0.6 -5' /><box style='color:#E0E4CC;' scale='0.4 0.4 0.4' position='16.2 1.0 -5' /><box style='color:#F38630;' scale='0.4 0.4 0.4' position='16.2 1.4 -5' /><box style='color:#FA6900;' scale='0.4 0.4 0.4' position='16.2 1.8 -5' />    <billboard position="20 0.75 -5" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#69D2E7;' scale='0.4 0.4 0.4' position='16.2 0.2 -5' /><box style='color:#A7DBD8;' scale='0.4 0.4 0.4' position='16.2 0.6 -5' /><box style='color:#E0E4CC;' scale='0.4 0.4 0.4' position='16.2 1.0 -5' /><box style='color:#F38630;' scale='0.4 0.4 0.4' position='16.2 1.4 -5' /><box style='color:#FA6900;' scale='0.4 0.4 0.4' position='16.2 1.8 -5' />    <billboard position="20 1.25 -5" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-3.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          (◕〝◕)
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-3.png' style='max-width: 100%; height: 60px;'> (◕〝◕)
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (3== 1) { alert('hello world =' + 3); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (3== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (3== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (3== 3) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			
+			if (3== 4) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			
+			if (3== 5) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			
+			if (3== 6) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			
+			if (3== 7) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			
+			if (3== 8) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			
+			if (3== 9) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			
+			if (3== 10) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			
+			if (3== 11) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			
+			if (3== 12) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			
+			if (3== 13) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			
+			if (3== 14) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			if (3== 15) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			if (3== 16) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			if (3== 17) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			
+			if (3== 18) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#FE4365;' scale='0.4 0.4 0.4' position='21.2 0.2 -5' /><box style='color:#FC9D9A;' scale='0.4 0.4 0.4' position='21.2 0.6 -5' /><box style='color:#F9CDAD;' scale='0.4 0.4 0.4' position='21.2 1.0 -5' /><box style='color:#C8C8A9;' scale='0.4 0.4 0.4' position='21.2 1.4 -5' /><box style='color:#83AF9B;' scale='0.4 0.4 0.4' position='21.2 1.8 -5' />    <billboard position="25 0.75 -5" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#FE4365;' scale='0.4 0.4 0.4' position='21.2 0.2 -5' /><box style='color:#FC9D9A;' scale='0.4 0.4 0.4' position='21.2 0.6 -5' /><box style='color:#F9CDAD;' scale='0.4 0.4 0.4' position='21.2 1.0 -5' /><box style='color:#C8C8A9;' scale='0.4 0.4 0.4' position='21.2 1.4 -5' /><box style='color:#83AF9B;' scale='0.4 0.4 0.4' position='21.2 1.8 -5' />    <billboard position="25 1.25 -5" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-4.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          Thought Provoking
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-4.png' style='max-width: 100%; height: 60px;'> Thought Provoking
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (4== 1) { alert('hello world =' + 4); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (4== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (4== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (4== 3) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			
+			if (4== 4) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			
+			if (4== 5) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			
+			if (4== 6) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			
+			if (4== 7) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			
+			if (4== 8) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			
+			if (4== 9) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			
+			if (4== 10) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			
+			if (4== 11) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			
+			if (4== 12) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			
+			if (4== 13) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			
+			if (4== 14) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			if (4== 15) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			if (4== 16) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			if (4== 17) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			
+			if (4== 18) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#ECD078;' scale='0.4 0.4 0.4' position='26.2 0.2 -5' /><box style='color:#D95B43;' scale='0.4 0.4 0.4' position='26.2 0.6 -5' /><box style='color:#C02942;' scale='0.4 0.4 0.4' position='26.2 1.0 -5' /><box style='color:#542437;' scale='0.4 0.4 0.4' position='26.2 1.4 -5' /><box style='color:#53777A;' scale='0.4 0.4 0.4' position='26.2 1.8 -5' />    <billboard position="5 0.75 -10" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#ECD078;' scale='0.4 0.4 0.4' position='26.2 0.2 -5' /><box style='color:#D95B43;' scale='0.4 0.4 0.4' position='26.2 0.6 -5' /><box style='color:#C02942;' scale='0.4 0.4 0.4' position='26.2 1.0 -5' /><box style='color:#542437;' scale='0.4 0.4 0.4' position='26.2 1.4 -5' /><box style='color:#53777A;' scale='0.4 0.4 0.4' position='26.2 1.8 -5' />    <billboard position="5 1.25 -10" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-5.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          cheer up emo kid
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-5.png' style='max-width: 100%; height: 60px;'> cheer up emo kid
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (5== 1) { alert('hello world =' + 5); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (5== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (5== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (5== 3) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			
+			if (5== 4) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			
+			if (5== 5) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			
+			if (5== 6) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			
+			if (5== 7) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			
+			if (5== 8) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			
+			if (5== 9) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			
+			if (5== 10) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			
+			if (5== 11) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			
+			if (5== 12) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			
+			if (5== 13) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			
+			if (5== 14) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			if (5== 15) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			if (5== 16) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			if (5== 17) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			
+			if (5== 18) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#556270;' scale='0.4 0.4 0.4' position='6.2 0.2 -10' /><box style='color:#4ECDC4;' scale='0.4 0.4 0.4' position='6.2 0.6 -10' /><box style='color:#C7F464;' scale='0.4 0.4 0.4' position='6.2 1.0 -10' /><box style='color:#FF6B6B;' scale='0.4 0.4 0.4' position='6.2 1.4 -10' /><box style='color:#C44D58;' scale='0.4 0.4 0.4' position='6.2 1.8 -10' />    <billboard position="10 0.75 -10" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#556270;' scale='0.4 0.4 0.4' position='6.2 0.2 -10' /><box style='color:#4ECDC4;' scale='0.4 0.4 0.4' position='6.2 0.6 -10' /><box style='color:#C7F464;' scale='0.4 0.4 0.4' position='6.2 1.0 -10' /><box style='color:#FF6B6B;' scale='0.4 0.4 0.4' position='6.2 1.4 -10' /><box style='color:#C44D58;' scale='0.4 0.4 0.4' position='6.2 1.8 -10' />    <billboard position="10 1.25 -10" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-6.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          let them eat cake
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-6.png' style='max-width: 100%; height: 60px;'> let them eat cake
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (6== 1) { alert('hello world =' + 6); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (6== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (6== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (6== 3) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			
+			if (6== 4) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			
+			if (6== 5) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			
+			if (6== 6) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			
+			if (6== 7) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			
+			if (6== 8) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			
+			if (6== 9) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			
+			if (6== 10) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			
+			if (6== 11) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			
+			if (6== 12) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			
+			if (6== 13) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			
+			if (6== 14) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			if (6== 15) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			if (6== 16) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			if (6== 17) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			
+			if (6== 18) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#774F38;' scale='0.4 0.4 0.4' position='11.2 0.2 -10' /><box style='color:#E08E79;' scale='0.4 0.4 0.4' position='11.2 0.6 -10' /><box style='color:#F1D4AF;' scale='0.4 0.4 0.4' position='11.2 1.0 -10' /><box style='color:#ECE5CE;' scale='0.4 0.4 0.4' position='11.2 1.4 -10' /><box style='color:#C5E0DC;' scale='0.4 0.4 0.4' position='11.2 1.8 -10' />    <billboard position="15 0.75 -10" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#774F38;' scale='0.4 0.4 0.4' position='11.2 0.2 -10' /><box style='color:#E08E79;' scale='0.4 0.4 0.4' position='11.2 0.6 -10' /><box style='color:#F1D4AF;' scale='0.4 0.4 0.4' position='11.2 1.0 -10' /><box style='color:#ECE5CE;' scale='0.4 0.4 0.4' position='11.2 1.4 -10' /><box style='color:#C5E0DC;' scale='0.4 0.4 0.4' position='11.2 1.8 -10' />    <billboard position="15 1.25 -10" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-7.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          Terra?
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-7.png' style='max-width: 100%; height: 60px;'> Terra?
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (7== 1) { alert('hello world =' + 7); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (7== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (7== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (7== 3) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			
+			if (7== 4) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			
+			if (7== 5) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			
+			if (7== 6) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			
+			if (7== 7) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			
+			if (7== 8) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			
+			if (7== 9) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			
+			if (7== 10) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			
+			if (7== 11) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			
+			if (7== 12) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			
+			if (7== 13) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			
+			if (7== 14) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			if (7== 15) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			if (7== 16) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			if (7== 17) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			
+			if (7== 18) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#E8DDCB;' scale='0.4 0.4 0.4' position='16.2 0.2 -10' /><box style='color:#CDB380;' scale='0.4 0.4 0.4' position='16.2 0.6 -10' /><box style='color:#036564;' scale='0.4 0.4 0.4' position='16.2 1.0 -10' /><box style='color:#033649;' scale='0.4 0.4 0.4' position='16.2 1.4 -10' /><box style='color:#031634;' scale='0.4 0.4 0.4' position='16.2 1.8 -10' />    <billboard position="20 0.75 -10" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#E8DDCB;' scale='0.4 0.4 0.4' position='16.2 0.2 -10' /><box style='color:#CDB380;' scale='0.4 0.4 0.4' position='16.2 0.6 -10' /><box style='color:#036564;' scale='0.4 0.4 0.4' position='16.2 1.0 -10' /><box style='color:#033649;' scale='0.4 0.4 0.4' position='16.2 1.4 -10' /><box style='color:#031634;' scale='0.4 0.4 0.4' position='16.2 1.8 -10' />    <billboard position="20 1.25 -10" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-8.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          (◕ ” ◕)
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-8.png' style='max-width: 100%; height: 60px;'> (◕ ” ◕)
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (8== 1) { alert('hello world =' + 8); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (8== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (8== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (8== 3) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			
+			if (8== 4) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			
+			if (8== 5) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			
+			if (8== 6) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			
+			if (8== 7) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			
+			if (8== 8) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			
+			if (8== 9) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			
+			if (8== 10) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			
+			if (8== 11) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			
+			if (8== 12) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			
+			if (8== 13) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			
+			if (8== 14) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			if (8== 15) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			if (8== 16) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			if (8== 17) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			
+			if (8== 18) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#490A3D;' scale='0.4 0.4 0.4' position='21.2 0.2 -10' /><box style='color:#BD1550;' scale='0.4 0.4 0.4' position='21.2 0.6 -10' /><box style='color:#E97F02;' scale='0.4 0.4 0.4' position='21.2 1.0 -10' /><box style='color:#F8CA00;' scale='0.4 0.4 0.4' position='21.2 1.4 -10' /><box style='color:#8A9B0F;' scale='0.4 0.4 0.4' position='21.2 1.8 -10' />    <billboard position="25 0.75 -10" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#490A3D;' scale='0.4 0.4 0.4' position='21.2 0.2 -10' /><box style='color:#BD1550;' scale='0.4 0.4 0.4' position='21.2 0.6 -10' /><box style='color:#E97F02;' scale='0.4 0.4 0.4' position='21.2 1.0 -10' /><box style='color:#F8CA00;' scale='0.4 0.4 0.4' position='21.2 1.4 -10' /><box style='color:#8A9B0F;' scale='0.4 0.4 0.4' position='21.2 1.8 -10' />    <billboard position="25 1.25 -10" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-9.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          i demand a pancake
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-9.png' style='max-width: 100%; height: 60px;'> i demand a pancake
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (9== 1) { alert('hello world =' + 9); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (9== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (9== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (9== 3) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			
+			if (9== 4) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			
+			if (9== 5) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			
+			if (9== 6) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			
+			if (9== 7) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			
+			if (9== 8) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			
+			if (9== 9) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			
+			if (9== 10) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			
+			if (9== 11) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			
+			if (9== 12) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			
+			if (9== 13) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			
+			if (9== 14) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			if (9== 15) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			if (9== 16) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			if (9== 17) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			
+			if (9== 18) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#594F4F;' scale='0.4 0.4 0.4' position='26.2 0.2 -10' /><box style='color:#547980;' scale='0.4 0.4 0.4' position='26.2 0.6 -10' /><box style='color:#45ADA8;' scale='0.4 0.4 0.4' position='26.2 1.0 -10' /><box style='color:#9DE0AD;' scale='0.4 0.4 0.4' position='26.2 1.4 -10' /><box style='color:#E5FCC2;' scale='0.4 0.4 0.4' position='26.2 1.8 -10' />    <billboard position="5 0.75 -15" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#594F4F;' scale='0.4 0.4 0.4' position='26.2 0.2 -10' /><box style='color:#547980;' scale='0.4 0.4 0.4' position='26.2 0.6 -10' /><box style='color:#45ADA8;' scale='0.4 0.4 0.4' position='26.2 1.0 -10' /><box style='color:#9DE0AD;' scale='0.4 0.4 0.4' position='26.2 1.4 -10' /><box style='color:#E5FCC2;' scale='0.4 0.4 0.4' position='26.2 1.8 -10' />    <billboard position="5 1.25 -15" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-10.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          Ocean Five
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-10.png' style='max-width: 100%; height: 60px;'> Ocean Five
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (10== 1) { alert('hello world =' + 10); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (10== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (10== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (10== 3) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			
+			if (10== 4) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			
+			if (10== 5) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			
+			if (10== 6) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			
+			if (10== 7) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			
+			if (10== 8) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			
+			if (10== 9) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			
+			if (10== 10) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			
+			if (10== 11) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			
+			if (10== 12) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			
+			if (10== 13) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			
+			if (10== 14) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			if (10== 15) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			if (10== 16) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			if (10== 17) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			
+			if (10== 18) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#00A0B0;' scale='0.4 0.4 0.4' position='6.2 0.2 -15' /><box style='color:#6A4A3C;' scale='0.4 0.4 0.4' position='6.2 0.6 -15' /><box style='color:#CC333F;' scale='0.4 0.4 0.4' position='6.2 1.0 -15' /><box style='color:#EB6841;' scale='0.4 0.4 0.4' position='6.2 1.4 -15' /><box style='color:#EDC951;' scale='0.4 0.4 0.4' position='6.2 1.8 -15' />    <billboard position="10 0.75 -15" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#00A0B0;' scale='0.4 0.4 0.4' position='6.2 0.2 -15' /><box style='color:#6A4A3C;' scale='0.4 0.4 0.4' position='6.2 0.6 -15' /><box style='color:#CC333F;' scale='0.4 0.4 0.4' position='6.2 1.0 -15' /><box style='color:#EB6841;' scale='0.4 0.4 0.4' position='6.2 1.4 -15' /><box style='color:#EDC951;' scale='0.4 0.4 0.4' position='6.2 1.8 -15' />    <billboard position="10 1.25 -15" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-11.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          LoversInJapan
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-11.png' style='max-width: 100%; height: 60px;'> LoversInJapan
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (11== 1) { alert('hello world =' + 11); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (11== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (11== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (11== 3) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			
+			if (11== 4) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			
+			if (11== 5) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			
+			if (11== 6) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			
+			if (11== 7) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			
+			if (11== 8) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			
+			if (11== 9) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			
+			if (11== 10) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			
+			if (11== 11) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			
+			if (11== 12) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			
+			if (11== 13) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			
+			if (11== 14) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			if (11== 15) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			if (11== 16) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			if (11== 17) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			
+			if (11== 18) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#E94E77;' scale='0.4 0.4 0.4' position='11.2 0.2 -15' /><box style='color:#D68189;' scale='0.4 0.4 0.4' position='11.2 0.6 -15' /><box style='color:#C6A49A;' scale='0.4 0.4 0.4' position='11.2 1.0 -15' /><box style='color:#C6E5D9;' scale='0.4 0.4 0.4' position='11.2 1.4 -15' /><box style='color:#F4EAD5;' scale='0.4 0.4 0.4' position='11.2 1.8 -15' />    <billboard position="15 0.75 -15" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#E94E77;' scale='0.4 0.4 0.4' position='11.2 0.2 -15' /><box style='color:#D68189;' scale='0.4 0.4 0.4' position='11.2 0.6 -15' /><box style='color:#C6A49A;' scale='0.4 0.4 0.4' position='11.2 1.0 -15' /><box style='color:#C6E5D9;' scale='0.4 0.4 0.4' position='11.2 1.4 -15' /><box style='color:#F4EAD5;' scale='0.4 0.4 0.4' position='11.2 1.8 -15' />    <billboard position="15 1.25 -15" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-12.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          Good Friends
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-12.png' style='max-width: 100%; height: 60px;'> Good Friends
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (12== 1) { alert('hello world =' + 12); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (12== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (12== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (12== 3) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			
+			if (12== 4) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			
+			if (12== 5) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			
+			if (12== 6) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			
+			if (12== 7) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			
+			if (12== 8) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			
+			if (12== 9) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			
+			if (12== 10) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			
+			if (12== 11) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			
+			if (12== 12) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			
+			if (12== 13) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			
+			if (12== 14) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			if (12== 15) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			if (12== 16) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			if (12== 17) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			
+			if (12== 18) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#D9CEB2;' scale='0.4 0.4 0.4' position='16.2 0.2 -15' /><box style='color:#948C75;' scale='0.4 0.4 0.4' position='16.2 0.6 -15' /><box style='color:#D5DED9;' scale='0.4 0.4 0.4' position='16.2 1.0 -15' /><box style='color:#7A6A53;' scale='0.4 0.4 0.4' position='16.2 1.4 -15' /><box style='color:#99B2B7;' scale='0.4 0.4 0.4' position='16.2 1.8 -15' />    <billboard position="20 0.75 -15" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#D9CEB2;' scale='0.4 0.4 0.4' position='16.2 0.2 -15' /><box style='color:#948C75;' scale='0.4 0.4 0.4' position='16.2 0.6 -15' /><box style='color:#D5DED9;' scale='0.4 0.4 0.4' position='16.2 1.0 -15' /><box style='color:#7A6A53;' scale='0.4 0.4 0.4' position='16.2 1.4 -15' /><box style='color:#99B2B7;' scale='0.4 0.4 0.4' position='16.2 1.8 -15' />    <billboard position="20 1.25 -15" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-13.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          w o r d l e s s .
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-13.png' style='max-width: 100%; height: 60px;'> w o r d l e s s .
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (13== 1) { alert('hello world =' + 13); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (13== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (13== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (13== 3) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			
+			if (13== 4) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			
+			if (13== 5) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			
+			if (13== 6) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			
+			if (13== 7) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			
+			if (13== 8) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			
+			if (13== 9) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			
+			if (13== 10) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			
+			if (13== 11) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			
+			if (13== 12) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			
+			if (13== 13) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			
+			if (13== 14) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			if (13== 15) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			if (13== 16) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			if (13== 17) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			
+			if (13== 18) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#FFFFFF;' scale='0.4 0.4 0.4' position='21.2 0.2 -15' /><box style='color:#CBE86B;' scale='0.4 0.4 0.4' position='21.2 0.6 -15' /><box style='color:#F2E9E1;' scale='0.4 0.4 0.4' position='21.2 1.0 -15' /><box style='color:#1C140D;' scale='0.4 0.4 0.4' position='21.2 1.4 -15' /><box style='color:#CBE86B;' scale='0.4 0.4 0.4' position='21.2 1.8 -15' />    <billboard position="25 0.75 -15" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#FFFFFF;' scale='0.4 0.4 0.4' position='21.2 0.2 -15' /><box style='color:#CBE86B;' scale='0.4 0.4 0.4' position='21.2 0.6 -15' /><box style='color:#F2E9E1;' scale='0.4 0.4 0.4' position='21.2 1.0 -15' /><box style='color:#1C140D;' scale='0.4 0.4 0.4' position='21.2 1.4 -15' /><box style='color:#CBE86B;' scale='0.4 0.4 0.4' position='21.2 1.8 -15' />    <billboard position="25 1.25 -15" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-14.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          Compatible
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-14.png' style='max-width: 100%; height: 60px;'> Compatible
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (14== 1) { alert('hello world =' + 14); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (14== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (14== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (14== 3) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			
+			if (14== 4) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			
+			if (14== 5) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			
+			if (14== 6) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			
+			if (14== 7) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			
+			if (14== 8) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			
+			if (14== 9) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			
+			if (14== 10) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			
+			if (14== 11) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			
+			if (14== 12) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			
+			if (14== 13) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			
+			if (14== 14) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			if (14== 15) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			if (14== 16) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			if (14== 17) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			
+			if (14== 18) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#3FB8AF;' scale='0.4 0.4 0.4' position='26.2 0.2 -15' /><box style='color:#7FC7AF;' scale='0.4 0.4 0.4' position='26.2 0.6 -15' /><box style='color:#DAD8A7;' scale='0.4 0.4 0.4' position='26.2 1.0 -15' /><box style='color:#FF9E9D;' scale='0.4 0.4 0.4' position='26.2 1.4 -15' /><box style='color:#FF3D7F;' scale='0.4 0.4 0.4' position='26.2 1.8 -15' />    <billboard position="5 0.75 -20" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#3FB8AF;' scale='0.4 0.4 0.4' position='26.2 0.2 -15' /><box style='color:#7FC7AF;' scale='0.4 0.4 0.4' position='26.2 0.6 -15' /><box style='color:#DAD8A7;' scale='0.4 0.4 0.4' position='26.2 1.0 -15' /><box style='color:#FF9E9D;' scale='0.4 0.4 0.4' position='26.2 1.4 -15' /><box style='color:#FF3D7F;' scale='0.4 0.4 0.4' position='26.2 1.8 -15' />    <billboard position="5 1.25 -20" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-15.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          Curiosity Killed
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-15.png' style='max-width: 100%; height: 60px;'> Curiosity Killed
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (15== 1) { alert('hello world =' + 15); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (15== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (15== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (15== 3) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			
+			if (15== 4) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			
+			if (15== 5) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			
+			if (15== 6) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			
+			if (15== 7) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			
+			if (15== 8) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			
+			if (15== 9) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			
+			if (15== 10) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			
+			if (15== 11) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			
+			if (15== 12) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			
+			if (15== 13) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			
+			if (15== 14) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			if (15== 15) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			if (15== 16) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			if (15== 17) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			
+			if (15== 18) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#EFFFCD;' scale='0.4 0.4 0.4' position='6.2 0.2 -20' /><box style='color:#DCE9BE;' scale='0.4 0.4 0.4' position='6.2 0.6 -20' /><box style='color:#555152;' scale='0.4 0.4 0.4' position='6.2 1.0 -20' /><box style='color:#2E2633;' scale='0.4 0.4 0.4' position='6.2 1.4 -20' /><box style='color:#99173C;' scale='0.4 0.4 0.4' position='6.2 1.8 -20' />    <billboard position="10 0.75 -20" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#EFFFCD;' scale='0.4 0.4 0.4' position='6.2 0.2 -20' /><box style='color:#DCE9BE;' scale='0.4 0.4 0.4' position='6.2 0.6 -20' /><box style='color:#555152;' scale='0.4 0.4 0.4' position='6.2 1.0 -20' /><box style='color:#2E2633;' scale='0.4 0.4 0.4' position='6.2 1.4 -20' /><box style='color:#99173C;' scale='0.4 0.4 0.4' position='6.2 1.8 -20' />    <billboard position="10 1.25 -20" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-16.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          dream magnet
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-16.png' style='max-width: 100%; height: 60px;'> dream magnet
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (16== 1) { alert('hello world =' + 16); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (16== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (16== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (16== 3) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			
+			if (16== 4) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			
+			if (16== 5) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			
+			if (16== 6) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			
+			if (16== 7) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			
+			if (16== 8) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			
+			if (16== 9) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			
+			if (16== 10) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			
+			if (16== 11) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			
+			if (16== 12) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			
+			if (16== 13) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			
+			if (16== 14) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			if (16== 15) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			if (16== 16) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			if (16== 17) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			
+			if (16== 18) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#343838;' scale='0.4 0.4 0.4' position='11.2 0.2 -20' /><box style='color:#005F6B;' scale='0.4 0.4 0.4' position='11.2 0.6 -20' /><box style='color:#008C9E;' scale='0.4 0.4 0.4' position='11.2 1.0 -20' /><box style='color:#00B4CC;' scale='0.4 0.4 0.4' position='11.2 1.4 -20' /><box style='color:#00DFFC;' scale='0.4 0.4 0.4' position='11.2 1.8 -20' />    <billboard position="15 0.75 -20" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#343838;' scale='0.4 0.4 0.4' position='11.2 0.2 -20' /><box style='color:#005F6B;' scale='0.4 0.4 0.4' position='11.2 0.6 -20' /><box style='color:#008C9E;' scale='0.4 0.4 0.4' position='11.2 1.0 -20' /><box style='color:#00B4CC;' scale='0.4 0.4 0.4' position='11.2 1.4 -20' /><box style='color:#00DFFC;' scale='0.4 0.4 0.4' position='11.2 1.8 -20' />    <billboard position="15 1.25 -20" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-17.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          clairedelune
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-17.png' style='max-width: 100%; height: 60px;'> clairedelune
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (17== 1) { alert('hello world =' + 17); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (17== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (17== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (17== 3) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			
+			if (17== 4) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			
+			if (17== 5) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			
+			if (17== 6) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			
+			if (17== 7) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			
+			if (17== 8) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			
+			if (17== 9) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			
+			if (17== 10) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			
+			if (17== 11) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			
+			if (17== 12) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			
+			if (17== 13) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			
+			if (17== 14) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			if (17== 15) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			if (17== 16) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			if (17== 17) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			
+			if (17== 18) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#413E4A;' scale='0.4 0.4 0.4' position='16.2 0.2 -20' /><box style='color:#73626E;' scale='0.4 0.4 0.4' position='16.2 0.6 -20' /><box style='color:#B38184;' scale='0.4 0.4 0.4' position='16.2 1.0 -20' /><box style='color:#F0B49E;' scale='0.4 0.4 0.4' position='16.2 1.4 -20' /><box style='color:#F7E4BE;' scale='0.4 0.4 0.4' position='16.2 1.8 -20' />    <billboard position="20 0.75 -20" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#413E4A;' scale='0.4 0.4 0.4' position='16.2 0.2 -20' /><box style='color:#73626E;' scale='0.4 0.4 0.4' position='16.2 0.6 -20' /><box style='color:#B38184;' scale='0.4 0.4 0.4' position='16.2 1.0 -20' /><box style='color:#F0B49E;' scale='0.4 0.4 0.4' position='16.2 1.4 -20' /><box style='color:#F7E4BE;' scale='0.4 0.4 0.4' position='16.2 1.8 -20' />    <billboard position="20 1.25 -20" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-18.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          coup de grâce
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-18.png' style='max-width: 100%; height: 60px;'> coup de grâce
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (18== 1) { alert('hello world =' + 18); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (18== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (18== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (18== 3) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			
+			if (18== 4) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			
+			if (18== 5) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			
+			if (18== 6) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			
+			if (18== 7) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			
+			if (18== 8) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			
+			if (18== 9) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			
+			if (18== 10) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			
+			if (18== 11) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			
+			if (18== 12) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			
+			if (18== 13) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			
+			if (18== 14) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			if (18== 15) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			if (18== 16) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			if (18== 17) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			
+			if (18== 18) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#99B898;' scale='0.4 0.4 0.4' position='21.2 0.2 -20' /><box style='color:#FECEA8;' scale='0.4 0.4 0.4' position='21.2 0.6 -20' /><box style='color:#FF847C;' scale='0.4 0.4 0.4' position='21.2 1.0 -20' /><box style='color:#E84A5F;' scale='0.4 0.4 0.4' position='21.2 1.4 -20' /><box style='color:#2A363B;' scale='0.4 0.4 0.4' position='21.2 1.8 -20' />    <billboard position="25 0.75 -20" rotation="0 0 0" scale="1.2 1.2 0.05">
+<box style='color:#99B898;' scale='0.4 0.4 0.4' position='21.2 0.2 -20' /><box style='color:#FECEA8;' scale='0.4 0.4 0.4' position='21.2 0.6 -20' /><box style='color:#FF847C;' scale='0.4 0.4 0.4' position='21.2 1.0 -20' /><box style='color:#E84A5F;' scale='0.4 0.4 0.4' position='21.2 1.4 -20' /><box style='color:#2A363B;' scale='0.4 0.4 0.4' position='21.2 1.8 -20' />    <billboard position="25 1.25 -20" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
-        <center style="margin-top: -81px; font-size: 1em;">
-          <img src="/images/test-19.png" style="max-width: 100%; height: 100px;" />
-		  <br>
-          Dance To Forget
-		  <br>
-		  <table style='background-color: #000000' width='100%' height='100%'><tr><td>
-		  <p style='color: #00F020'> For a given gist, e.g. https://gist.github.com/anonymous/5446951, you can access a JSON object containing
-		  the HTML markup and CSS URI for the Gist at https://gist.github.com/anonymous/5446989.json </p>
+        <center style='margin-top: -47px; font-size: 1.2em;'>
+          <img src='/images/test-19.png' style='max-width: 100%; height: 60px;'> Dance To Forget
+				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
+				 <tr>
+				  <td style='vertical-align: top;' height= '433'>
+				    <div id='box1' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+					<div id='box2' height='433'>
+					  <p style='color: #00F020; vertical-align: top;'> </p>
+					</div>
+				</td></tr></table>
 		  
 		  <script>
+		  
 		   // dynamically load a Gist without an iframe:
 		   
 		   // loadGist(element, 5446951);
 		   
-		   if (19== 1) { alert('hello world =' + 19); }
-  
-           // temp
-           function loadGist(element, gistId) {
-            // something here
-           }
+			if (19== 1) { 
+				
+				var parent = document.getElementById('box1');
+				var child  = parent.childNodes[1];
+				var node   = document.createElement('p');
+				node.setAttribute('color', '#FF0000');
+				var textnode = document.createTextNode('Hello World');
+				node.appendChild(textnode);
+				child.appendChild(node);
+				alert(child.innerHTML);
+				
+				// setAttribute("src", file);
+			}
+			
+			if (19== 2) { 
+				
+				var parent2 = document.getElementById('box2');
+				var child2 = parent2.childNodes[1];
+				// alert(child2.innerHTML);
+				var gistId = 5446951;
+				var script = document.createElement('script');
+				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				child2.appendChild(script);
+				alert(child2.innerHTML);
+			}
+			
+			if (19== 3) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			
+			if (19== 4) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			
+			if (19== 5) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			
+			if (19== 6) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			
+			if (19== 7) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			
+			if (19== 8) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			
+			if (19== 9) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			
+			if (19== 10) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			
+			if (19== 11) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			
+			if (19== 12) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			
+			if (19== 13) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			
+			if (19== 14) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			if (19== 15) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			if (19== 16) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			if (19== 17) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			
+			if (19== 18) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
+			
+           
 		   </script>
 		   
-		  </td></tr></table>
-		  <br>
         </center>
       ]]>
     </billboard>
