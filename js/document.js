@@ -4,9 +4,7 @@ var UUID 	= require("uuid"),
   dom 		= require("../js/dom-lite"),
   Script 	= require("../js/script"),
   Document  = dom.Document,
-  
   HTMLElement = dom.HTMLElement,
-  
   Audio 	= require("../js/audio"),
   Billboard = require("../js/billboard"),
   Box 		= require("../js/box"),
@@ -15,17 +13,15 @@ var UUID 	= require("uuid"),
   Model 	= require("../js/model"),
   Player 	= require("../js/player"),
   Spawn 	= require("../js/spawn"),
-  Skybox 	= require("../js/skybox");
+  Sky 		= require("../js/sky");
   
 
 Document.prototype.markAsDead = function(uuid) {
   this.deadNodes[uuid] = (new Date).valueOf();
   return delete this.nodeMap[uuid];
-};
+}
 
-Document.prototype.getElementByUUID = function(uuid) {
-  return this.nodeMap[uuid];
-};
+Document.prototype.getElementByUUID = function(uuid) { return this.nodeMap[uuid]; }
 
 Document.prototype.createElement = function(tag) {
   var node;
@@ -37,7 +33,7 @@ Document.prototype.createElement = function(tag) {
   } else if (tag === "link") {		node = new Link;
   } else if (tag === "model") {		node = new Model;
   } else if (tag === "player") {	node = new Player;
-  } else if (tag === "skybox") {	node = new Skybox;
+  } else if (tag === "sky") {		node = new Sky;
   } else if (tag === "spawn") {		node = new Spawn;
   
   } else {	node = new HTMLElement(tag); }

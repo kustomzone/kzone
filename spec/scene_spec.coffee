@@ -1,13 +1,12 @@
-Scene = require('../elements/scene')
-
-Script = require('../elements/script')
-Box = require('../elements/box')
-Spawn = require('../elements/spawn')
-Model = require('../elements/model')
-Link = require('../elements/link')
-Skybox = require('../elements/skybox')
-Fog = require('../elements/fog')
-Audio = require('../elements/audio')
+Scene 	= require('../js/scene')
+Script 	= require('../js/script')
+Box 	= require('../js/box')
+Spawn 	= require('../js/spawn')
+Model 	= require('../js/model')
+Link 	= require('../js/link')
+Sky 	= require('../js/sky')
+Fog 	= require('../js/fog')
+Audio 	= require('../js/audio')
 
 describe 'constructor', ->
   it 'should create', ->
@@ -78,11 +77,11 @@ describe 'all_tags', ->
       expect(scene.getElementsByTagName("link")[0].href).toMatch /test/
       expect(scene.getElementsByTagName("link")[0] instanceof Link).toBeTruthy()
 
-  it 'should parse skybox', ->
+  it 'should parse sky', ->
     Scene.load process.cwd() + '/spec/fixtures/all_tags.xml', (scene) ->
-      expect(scene.getElementsByTagName("skybox").length).toEqual 1
-      expect(scene.getElementsByTagName("skybox")[0].src).toMatch /blah/
-      expect(scene.getElementsByTagName("skybox")[0] instanceof Skybox).toBeTruthy()
+      expect(scene.getElementsByTagName("sky").length).toEqual 1
+      expect(scene.getElementsByTagName("sky")[0].src).toMatch /blah/
+      expect(scene.getElementsByTagName("sky")[0] instanceof Sky).toBeTruthy()
 
   it 'should parse audio', ->
     Scene.load process.cwd() + '/spec/fixtures/all_tags.xml', (scene) ->

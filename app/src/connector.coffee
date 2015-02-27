@@ -1,16 +1,15 @@
-Utils = require "./utils.coffee"
-URI = require("uri-js")
-StyleMap = require("./style_map")
-TWEEN = require("tween.js")
-EventEmitter = require('wolfy87-eventemitter');
-Color = require("color")
+Utils 		= require('./utils.coffee')
+URI 		= require('uri-js')
+StyleMap 	= require('./style_map')
+TWEEN 		= require('tween')
+EventEmitter= require('wolfy87-eventemitter')
+Color 		= require('color')
 
-Billboard = require("./elements/billboard.coffee")
-Box = require("./elements/box.coffee")
-Skybox = require("./elements/skybox.coffee")
-Fog = require("./elements/fog.coffee")
-
-Utils = require("./utils.coffee")
+Billboard 	= require('./coffee/billboard.coffee')
+Box 		= require('./coffee/box.coffee')
+Sky 		= require('./coffee/box.coffee')
+Fog 		= require('./coffee/fog.coffee')
+Utils 		= require('./utils.coffee')
 
 class Connector extends EventEmitter
   constructor: (@client, @scene, @physicsWorld, @uri, isPortal, referrer) ->
@@ -31,7 +30,7 @@ class Connector extends EventEmitter
     @addFloor()
 
   addFloor: ->
-    floorTexture = new THREE.ImageUtils.loadTexture( '/images/grid.png' )
+    floorTexture = new THREE.ImageUtils.loadTexture( '/img/grid.png' )
     floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
     floorTexture.repeat.set( 1000, 1000 )
 
@@ -47,7 +46,7 @@ class Connector extends EventEmitter
     groundBody = new CANNON.Body { mass: 0 } # static
     groundShape = new CANNON.Plane()
     groundBody.addShape(groundShape)
-    groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(1,0,0),-Math.PI/2);
+    groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(1,0,0),-Math.PI/2)
     
     @physicsWorld.add(groundBody)
 
@@ -102,7 +101,7 @@ class Connector extends EventEmitter
     while obj.children[0]
       obj.remove(obj.children[0])
       
-    glowTexture = new THREE.ImageUtils.loadTexture( '/images/portal.png' )
+    glowTexture = new THREE.ImageUtils.loadTexture( '/img/portal.png' )
     glowTexture.wrapS = glowTexture.wrapT = THREE.RepeatWrapping;
     glowTexture.repeat.set( 1, 1 )
 
@@ -412,8 +411,8 @@ class Connector extends EventEmitter
     else if el.is("box")
       obj = Box.create(this, el)
 
-    else if el.is("skybox")
-      obj = Skybox.create(this, el)
+    else if el.is("sky")
+      obj = Sky.create(this, el)
 
     else if el.is("fog")
       Fog.create(this, el)
@@ -450,17 +449,17 @@ class Connector extends EventEmitter
       @physicsWorld.add(obj.body)
       obj.body.uuid = uuid
 
-    if !el.is("skybox,fog") and newPosition
+    if !el.is("sky,fog") and newPosition
       obj.position.copy(newPosition)
       if obj.body
         obj.body.position.copy(newPosition)
 
-    if !el.is("skybox,fog") and newQuaternion
+    if !el.is("sky,fog") and newQuaternion
       obj.quaternion.copy(newQuaternion)
       if obj.body
         obj.body.quaternion.copy(newQuaternion)
 
-    if el.is("skybox")
+    if el.is("sky")
       obj.castShadow = false
     else
       obj.castShadow = true

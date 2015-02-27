@@ -4,15 +4,12 @@
     <billboard position="5 1.25 -5" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-0.png' style='max-width: 100%; height: 60px;'> Lovely Love
+          <img src='/images/test-0.png' style='max-width: 100%; height: 60px;'> Lovely Love 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box0' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -22,41 +19,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (0== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (0== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (0== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (0== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (0== 3) { 
 		   
-				// alert('hello world =' + 0); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (0== 4) { 
 		   
-				// alert('hello world =' + 0); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -134,14 +150,17 @@
 				// alert('hello world =' + 0); 
 				
 			}
-			
 			if (0== 18) { 
 		   
 				// alert('hello world =' + 0); 
 				
 			}
+           if (0== 19) { 
+		   
+				// alert('hello world =' + 0); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -151,15 +170,12 @@
 <box style='color:#DB3E3E;' scale='0.4 0.4 0.4' position='6.2 0.2 -5' /><box style='color:#030000;' scale='0.4 0.4 0.4' position='6.2 0.6 -5' /><box style='color:#E97070;' scale='0.4 0.4 0.4' position='6.2 1.0 -5' /><box style='color:#FEBCA3;' scale='0.4 0.4 0.4' position='6.2 1.4 -5' /><box style='color:#6E0E0E;' scale='0.4 0.4 0.4' position='6.2 1.8 -5' />    <billboard position="10 1.25 -5" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-1.png' style='max-width: 100%; height: 60px;'> Indie Lemon
+          <img src='/images/test-1.png' style='max-width: 100%; height: 60px;'> Indie Lemon 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box1' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -169,41 +185,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (1== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (1== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (1== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (1== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (1== 3) { 
 		   
-				// alert('hello world =' + 1); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (1== 4) { 
 		   
-				// alert('hello world =' + 1); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -281,14 +316,17 @@
 				// alert('hello world =' + 1); 
 				
 			}
-			
 			if (1== 18) { 
 		   
 				// alert('hello world =' + 1); 
 				
 			}
+           if (1== 19) { 
+		   
+				// alert('hello world =' + 1); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -298,15 +336,12 @@
 <box style='color:#D7E8D5;' scale='0.4 0.4 0.4' position='11.2 0.2 -5' /><box style='color:#E6F0AF;' scale='0.4 0.4 0.4' position='11.2 0.6 -5' /><box style='color:#E8ED76;' scale='0.4 0.4 0.4' position='11.2 1.0 -5' /><box style='color:#FFCD57;' scale='0.4 0.4 0.4' position='11.2 1.4 -5' /><box style='color:#4A3A47;' scale='0.4 0.4 0.4' position='11.2 1.8 -5' />    <billboard position="15 1.25 -5" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-2.png' style='max-width: 100%; height: 60px;'> Giant Goldfish
+          <img src='/images/test-2.png' style='max-width: 100%; height: 60px;'> Giant Goldfish 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box2' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -316,41 +351,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (2== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (2== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (2== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (2== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (2== 3) { 
 		   
-				// alert('hello world =' + 2); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (2== 4) { 
 		   
-				// alert('hello world =' + 2); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -428,14 +482,17 @@
 				// alert('hello world =' + 2); 
 				
 			}
-			
 			if (2== 18) { 
 		   
 				// alert('hello world =' + 2); 
 				
 			}
+           if (2== 19) { 
+		   
+				// alert('hello world =' + 2); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -445,15 +502,12 @@
 <box style='color:#69D2E7;' scale='0.4 0.4 0.4' position='16.2 0.2 -5' /><box style='color:#A7DBD8;' scale='0.4 0.4 0.4' position='16.2 0.6 -5' /><box style='color:#E0E4CC;' scale='0.4 0.4 0.4' position='16.2 1.0 -5' /><box style='color:#F38630;' scale='0.4 0.4 0.4' position='16.2 1.4 -5' /><box style='color:#FA6900;' scale='0.4 0.4 0.4' position='16.2 1.8 -5' />    <billboard position="20 1.25 -5" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-3.png' style='max-width: 100%; height: 60px;'> (◕〝◕)
+          <img src='/images/test-3.png' style='max-width: 100%; height: 60px;'> (◕〝◕) 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box3' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -463,41 +517,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (3== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (3== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (3== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (3== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (3== 3) { 
 		   
-				// alert('hello world =' + 3); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (3== 4) { 
 		   
-				// alert('hello world =' + 3); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -575,14 +648,17 @@
 				// alert('hello world =' + 3); 
 				
 			}
-			
 			if (3== 18) { 
 		   
 				// alert('hello world =' + 3); 
 				
 			}
+           if (3== 19) { 
+		   
+				// alert('hello world =' + 3); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -592,15 +668,12 @@
 <box style='color:#FE4365;' scale='0.4 0.4 0.4' position='21.2 0.2 -5' /><box style='color:#FC9D9A;' scale='0.4 0.4 0.4' position='21.2 0.6 -5' /><box style='color:#F9CDAD;' scale='0.4 0.4 0.4' position='21.2 1.0 -5' /><box style='color:#C8C8A9;' scale='0.4 0.4 0.4' position='21.2 1.4 -5' /><box style='color:#83AF9B;' scale='0.4 0.4 0.4' position='21.2 1.8 -5' />    <billboard position="25 1.25 -5" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-4.png' style='max-width: 100%; height: 60px;'> Thought Provoking
+          <img src='/images/test-4.png' style='max-width: 100%; height: 60px;'> Thought Provoking 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box4' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -610,41 +683,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (4== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (4== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (4== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (4== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (4== 3) { 
 		   
-				// alert('hello world =' + 4); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (4== 4) { 
 		   
-				// alert('hello world =' + 4); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -722,14 +814,17 @@
 				// alert('hello world =' + 4); 
 				
 			}
-			
 			if (4== 18) { 
 		   
 				// alert('hello world =' + 4); 
 				
 			}
+           if (4== 19) { 
+		   
+				// alert('hello world =' + 4); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -739,15 +834,12 @@
 <box style='color:#ECD078;' scale='0.4 0.4 0.4' position='26.2 0.2 -5' /><box style='color:#D95B43;' scale='0.4 0.4 0.4' position='26.2 0.6 -5' /><box style='color:#C02942;' scale='0.4 0.4 0.4' position='26.2 1.0 -5' /><box style='color:#542437;' scale='0.4 0.4 0.4' position='26.2 1.4 -5' /><box style='color:#53777A;' scale='0.4 0.4 0.4' position='26.2 1.8 -5' />    <billboard position="5 1.25 -10" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-5.png' style='max-width: 100%; height: 60px;'> cheer up emo kid
+          <img src='/images/test-5.png' style='max-width: 100%; height: 60px;'> cheer up emo kid 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box5' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -757,41 +849,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (5== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (5== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (5== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (5== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (5== 3) { 
 		   
-				// alert('hello world =' + 5); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (5== 4) { 
 		   
-				// alert('hello world =' + 5); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -869,14 +980,17 @@
 				// alert('hello world =' + 5); 
 				
 			}
-			
 			if (5== 18) { 
 		   
 				// alert('hello world =' + 5); 
 				
 			}
+           if (5== 19) { 
+		   
+				// alert('hello world =' + 5); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -886,15 +1000,12 @@
 <box style='color:#556270;' scale='0.4 0.4 0.4' position='6.2 0.2 -10' /><box style='color:#4ECDC4;' scale='0.4 0.4 0.4' position='6.2 0.6 -10' /><box style='color:#C7F464;' scale='0.4 0.4 0.4' position='6.2 1.0 -10' /><box style='color:#FF6B6B;' scale='0.4 0.4 0.4' position='6.2 1.4 -10' /><box style='color:#C44D58;' scale='0.4 0.4 0.4' position='6.2 1.8 -10' />    <billboard position="10 1.25 -10" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-6.png' style='max-width: 100%; height: 60px;'> let them eat cake
+          <img src='/images/test-6.png' style='max-width: 100%; height: 60px;'> let them eat cake 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box6' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -904,41 +1015,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (6== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (6== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (6== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (6== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (6== 3) { 
 		   
-				// alert('hello world =' + 6); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (6== 4) { 
 		   
-				// alert('hello world =' + 6); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -1016,14 +1146,17 @@
 				// alert('hello world =' + 6); 
 				
 			}
-			
 			if (6== 18) { 
 		   
 				// alert('hello world =' + 6); 
 				
 			}
+           if (6== 19) { 
+		   
+				// alert('hello world =' + 6); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -1033,15 +1166,12 @@
 <box style='color:#774F38;' scale='0.4 0.4 0.4' position='11.2 0.2 -10' /><box style='color:#E08E79;' scale='0.4 0.4 0.4' position='11.2 0.6 -10' /><box style='color:#F1D4AF;' scale='0.4 0.4 0.4' position='11.2 1.0 -10' /><box style='color:#ECE5CE;' scale='0.4 0.4 0.4' position='11.2 1.4 -10' /><box style='color:#C5E0DC;' scale='0.4 0.4 0.4' position='11.2 1.8 -10' />    <billboard position="15 1.25 -10" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-7.png' style='max-width: 100%; height: 60px;'> Terra?
+          <img src='/images/test-7.png' style='max-width: 100%; height: 60px;'> Terra? 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box7' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -1051,41 +1181,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (7== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (7== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (7== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (7== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (7== 3) { 
 		   
-				// alert('hello world =' + 7); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (7== 4) { 
 		   
-				// alert('hello world =' + 7); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -1163,14 +1312,17 @@
 				// alert('hello world =' + 7); 
 				
 			}
-			
 			if (7== 18) { 
 		   
 				// alert('hello world =' + 7); 
 				
 			}
+           if (7== 19) { 
+		   
+				// alert('hello world =' + 7); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -1180,15 +1332,12 @@
 <box style='color:#E8DDCB;' scale='0.4 0.4 0.4' position='16.2 0.2 -10' /><box style='color:#CDB380;' scale='0.4 0.4 0.4' position='16.2 0.6 -10' /><box style='color:#036564;' scale='0.4 0.4 0.4' position='16.2 1.0 -10' /><box style='color:#033649;' scale='0.4 0.4 0.4' position='16.2 1.4 -10' /><box style='color:#031634;' scale='0.4 0.4 0.4' position='16.2 1.8 -10' />    <billboard position="20 1.25 -10" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-8.png' style='max-width: 100%; height: 60px;'> (◕ ” ◕)
+          <img src='/images/test-8.png' style='max-width: 100%; height: 60px;'> (◕ ” ◕) 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box8' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -1198,41 +1347,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (8== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (8== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (8== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (8== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (8== 3) { 
 		   
-				// alert('hello world =' + 8); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (8== 4) { 
 		   
-				// alert('hello world =' + 8); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -1310,14 +1478,17 @@
 				// alert('hello world =' + 8); 
 				
 			}
-			
 			if (8== 18) { 
 		   
 				// alert('hello world =' + 8); 
 				
 			}
+           if (8== 19) { 
+		   
+				// alert('hello world =' + 8); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -1327,15 +1498,12 @@
 <box style='color:#490A3D;' scale='0.4 0.4 0.4' position='21.2 0.2 -10' /><box style='color:#BD1550;' scale='0.4 0.4 0.4' position='21.2 0.6 -10' /><box style='color:#E97F02;' scale='0.4 0.4 0.4' position='21.2 1.0 -10' /><box style='color:#F8CA00;' scale='0.4 0.4 0.4' position='21.2 1.4 -10' /><box style='color:#8A9B0F;' scale='0.4 0.4 0.4' position='21.2 1.8 -10' />    <billboard position="25 1.25 -10" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-9.png' style='max-width: 100%; height: 60px;'> i demand a pancake
+          <img src='/images/test-9.png' style='max-width: 100%; height: 60px;'> i demand a pancake 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box9' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -1345,41 +1513,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (9== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (9== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (9== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (9== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (9== 3) { 
 		   
-				// alert('hello world =' + 9); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (9== 4) { 
 		   
-				// alert('hello world =' + 9); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -1457,14 +1644,17 @@
 				// alert('hello world =' + 9); 
 				
 			}
-			
 			if (9== 18) { 
 		   
 				// alert('hello world =' + 9); 
 				
 			}
+           if (9== 19) { 
+		   
+				// alert('hello world =' + 9); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -1474,15 +1664,12 @@
 <box style='color:#594F4F;' scale='0.4 0.4 0.4' position='26.2 0.2 -10' /><box style='color:#547980;' scale='0.4 0.4 0.4' position='26.2 0.6 -10' /><box style='color:#45ADA8;' scale='0.4 0.4 0.4' position='26.2 1.0 -10' /><box style='color:#9DE0AD;' scale='0.4 0.4 0.4' position='26.2 1.4 -10' /><box style='color:#E5FCC2;' scale='0.4 0.4 0.4' position='26.2 1.8 -10' />    <billboard position="5 1.25 -15" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-10.png' style='max-width: 100%; height: 60px;'> Ocean Five
+          <img src='/images/test-10.png' style='max-width: 100%; height: 60px;'> Ocean Five 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box10' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -1492,41 +1679,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (10== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (10== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (10== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (10== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (10== 3) { 
 		   
-				// alert('hello world =' + 10); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (10== 4) { 
 		   
-				// alert('hello world =' + 10); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -1604,14 +1810,17 @@
 				// alert('hello world =' + 10); 
 				
 			}
-			
 			if (10== 18) { 
 		   
 				// alert('hello world =' + 10); 
 				
 			}
+           if (10== 19) { 
+		   
+				// alert('hello world =' + 10); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -1621,15 +1830,12 @@
 <box style='color:#00A0B0;' scale='0.4 0.4 0.4' position='6.2 0.2 -15' /><box style='color:#6A4A3C;' scale='0.4 0.4 0.4' position='6.2 0.6 -15' /><box style='color:#CC333F;' scale='0.4 0.4 0.4' position='6.2 1.0 -15' /><box style='color:#EB6841;' scale='0.4 0.4 0.4' position='6.2 1.4 -15' /><box style='color:#EDC951;' scale='0.4 0.4 0.4' position='6.2 1.8 -15' />    <billboard position="10 1.25 -15" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-11.png' style='max-width: 100%; height: 60px;'> LoversInJapan
+          <img src='/images/test-11.png' style='max-width: 100%; height: 60px;'> LoversInJapan 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box11' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -1639,41 +1845,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (11== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (11== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (11== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (11== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (11== 3) { 
 		   
-				// alert('hello world =' + 11); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (11== 4) { 
 		   
-				// alert('hello world =' + 11); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -1751,14 +1976,17 @@
 				// alert('hello world =' + 11); 
 				
 			}
-			
 			if (11== 18) { 
 		   
 				// alert('hello world =' + 11); 
 				
 			}
+           if (11== 19) { 
+		   
+				// alert('hello world =' + 11); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -1768,15 +1996,12 @@
 <box style='color:#E94E77;' scale='0.4 0.4 0.4' position='11.2 0.2 -15' /><box style='color:#D68189;' scale='0.4 0.4 0.4' position='11.2 0.6 -15' /><box style='color:#C6A49A;' scale='0.4 0.4 0.4' position='11.2 1.0 -15' /><box style='color:#C6E5D9;' scale='0.4 0.4 0.4' position='11.2 1.4 -15' /><box style='color:#F4EAD5;' scale='0.4 0.4 0.4' position='11.2 1.8 -15' />    <billboard position="15 1.25 -15" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-12.png' style='max-width: 100%; height: 60px;'> Good Friends
+          <img src='/images/test-12.png' style='max-width: 100%; height: 60px;'> Good Friends 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box12' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -1786,41 +2011,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (12== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (12== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (12== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (12== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (12== 3) { 
 		   
-				// alert('hello world =' + 12); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (12== 4) { 
 		   
-				// alert('hello world =' + 12); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -1898,14 +2142,17 @@
 				// alert('hello world =' + 12); 
 				
 			}
-			
 			if (12== 18) { 
 		   
 				// alert('hello world =' + 12); 
 				
 			}
+           if (12== 19) { 
+		   
+				// alert('hello world =' + 12); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -1915,15 +2162,12 @@
 <box style='color:#D9CEB2;' scale='0.4 0.4 0.4' position='16.2 0.2 -15' /><box style='color:#948C75;' scale='0.4 0.4 0.4' position='16.2 0.6 -15' /><box style='color:#D5DED9;' scale='0.4 0.4 0.4' position='16.2 1.0 -15' /><box style='color:#7A6A53;' scale='0.4 0.4 0.4' position='16.2 1.4 -15' /><box style='color:#99B2B7;' scale='0.4 0.4 0.4' position='16.2 1.8 -15' />    <billboard position="20 1.25 -15" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-13.png' style='max-width: 100%; height: 60px;'> w o r d l e s s .
+          <img src='/images/test-13.png' style='max-width: 100%; height: 60px;'> Compatible 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box13' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -1933,41 +2177,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (13== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (13== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (13== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (13== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (13== 3) { 
 		   
-				// alert('hello world =' + 13); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (13== 4) { 
 		   
-				// alert('hello world =' + 13); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -2045,32 +2308,32 @@
 				// alert('hello world =' + 13); 
 				
 			}
-			
 			if (13== 18) { 
 		   
 				// alert('hello world =' + 13); 
 				
 			}
+           if (13== 19) { 
+		   
+				// alert('hello world =' + 13); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#FFFFFF;' scale='0.4 0.4 0.4' position='21.2 0.2 -15' /><box style='color:#CBE86B;' scale='0.4 0.4 0.4' position='21.2 0.6 -15' /><box style='color:#F2E9E1;' scale='0.4 0.4 0.4' position='21.2 1.0 -15' /><box style='color:#1C140D;' scale='0.4 0.4 0.4' position='21.2 1.4 -15' /><box style='color:#CBE86B;' scale='0.4 0.4 0.4' position='21.2 1.8 -15' />    <billboard position="25 1.25 -15" rotation="0 0 0" scale="2 2 0.05">
+<box style='color:#3FB8AF;' scale='0.4 0.4 0.4' position='21.2 0.2 -15' /><box style='color:#7FC7AF;' scale='0.4 0.4 0.4' position='21.2 0.6 -15' /><box style='color:#DAD8A7;' scale='0.4 0.4 0.4' position='21.2 1.0 -15' /><box style='color:#FF9E9D;' scale='0.4 0.4 0.4' position='21.2 1.4 -15' /><box style='color:#FF3D7F;' scale='0.4 0.4 0.4' position='21.2 1.8 -15' />    <billboard position="25 1.25 -15" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-14.png' style='max-width: 100%; height: 60px;'> Compatible
+          <img src='/images/test-14.png' style='max-width: 100%; height: 60px;'> w o r d l e s s . 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box14' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -2080,41 +2343,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (14== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (14== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (14== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (14== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (14== 3) { 
 		   
-				// alert('hello world =' + 14); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (14== 4) { 
 		   
-				// alert('hello world =' + 14); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -2192,32 +2474,32 @@
 				// alert('hello world =' + 14); 
 				
 			}
-			
 			if (14== 18) { 
 		   
 				// alert('hello world =' + 14); 
 				
 			}
+           if (14== 19) { 
+		   
+				// alert('hello world =' + 14); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
       ]]>
     </billboard>
 	
-<box style='color:#3FB8AF;' scale='0.4 0.4 0.4' position='26.2 0.2 -15' /><box style='color:#7FC7AF;' scale='0.4 0.4 0.4' position='26.2 0.6 -15' /><box style='color:#DAD8A7;' scale='0.4 0.4 0.4' position='26.2 1.0 -15' /><box style='color:#FF9E9D;' scale='0.4 0.4 0.4' position='26.2 1.4 -15' /><box style='color:#FF3D7F;' scale='0.4 0.4 0.4' position='26.2 1.8 -15' />    <billboard position="5 1.25 -20" rotation="0 0 0" scale="2 2 0.05">
+<box style='color:#FFFFFF;' scale='0.4 0.4 0.4' position='26.2 0.2 -15' /><box style='color:#CBE86B;' scale='0.4 0.4 0.4' position='26.2 0.6 -15' /><box style='color:#F2E9E1;' scale='0.4 0.4 0.4' position='26.2 1.0 -15' /><box style='color:#1C140D;' scale='0.4 0.4 0.4' position='26.2 1.4 -15' /><box style='color:#CBE86B;' scale='0.4 0.4 0.4' position='26.2 1.8 -15' />    <billboard position="5 1.25 -20" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-15.png' style='max-width: 100%; height: 60px;'> Curiosity Killed
+          <img src='/images/test-15.png' style='max-width: 100%; height: 60px;'> Curiosity Killed 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box15' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -2227,41 +2509,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (15== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (15== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (15== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (15== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (15== 3) { 
 		   
-				// alert('hello world =' + 15); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (15== 4) { 
 		   
-				// alert('hello world =' + 15); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -2339,14 +2640,17 @@
 				// alert('hello world =' + 15); 
 				
 			}
-			
 			if (15== 18) { 
 		   
 				// alert('hello world =' + 15); 
 				
 			}
+           if (15== 19) { 
+		   
+				// alert('hello world =' + 15); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -2356,15 +2660,12 @@
 <box style='color:#EFFFCD;' scale='0.4 0.4 0.4' position='6.2 0.2 -20' /><box style='color:#DCE9BE;' scale='0.4 0.4 0.4' position='6.2 0.6 -20' /><box style='color:#555152;' scale='0.4 0.4 0.4' position='6.2 1.0 -20' /><box style='color:#2E2633;' scale='0.4 0.4 0.4' position='6.2 1.4 -20' /><box style='color:#99173C;' scale='0.4 0.4 0.4' position='6.2 1.8 -20' />    <billboard position="10 1.25 -20" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-16.png' style='max-width: 100%; height: 60px;'> dream magnet
+          <img src='/images/test-16.png' style='max-width: 100%; height: 60px;'> dream magnet 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box16' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -2374,41 +2675,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (16== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (16== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (16== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (16== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (16== 3) { 
 		   
-				// alert('hello world =' + 16); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (16== 4) { 
 		   
-				// alert('hello world =' + 16); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -2486,14 +2806,17 @@
 				// alert('hello world =' + 16); 
 				
 			}
-			
 			if (16== 18) { 
 		   
 				// alert('hello world =' + 16); 
 				
 			}
+           if (16== 19) { 
+		   
+				// alert('hello world =' + 16); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -2503,15 +2826,12 @@
 <box style='color:#343838;' scale='0.4 0.4 0.4' position='11.2 0.2 -20' /><box style='color:#005F6B;' scale='0.4 0.4 0.4' position='11.2 0.6 -20' /><box style='color:#008C9E;' scale='0.4 0.4 0.4' position='11.2 1.0 -20' /><box style='color:#00B4CC;' scale='0.4 0.4 0.4' position='11.2 1.4 -20' /><box style='color:#00DFFC;' scale='0.4 0.4 0.4' position='11.2 1.8 -20' />    <billboard position="15 1.25 -20" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-17.png' style='max-width: 100%; height: 60px;'> clairedelune
+          <img src='/images/test-17.png' style='max-width: 100%; height: 60px;'> clairedelune 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box17' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -2521,41 +2841,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (17== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (17== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (17== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (17== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (17== 3) { 
 		   
-				// alert('hello world =' + 17); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (17== 4) { 
 		   
-				// alert('hello world =' + 17); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -2633,14 +2972,17 @@
 				// alert('hello world =' + 17); 
 				
 			}
-			
 			if (17== 18) { 
 		   
 				// alert('hello world =' + 17); 
 				
 			}
+           if (17== 19) { 
+		   
+				// alert('hello world =' + 17); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -2650,15 +2992,12 @@
 <box style='color:#413E4A;' scale='0.4 0.4 0.4' position='16.2 0.2 -20' /><box style='color:#73626E;' scale='0.4 0.4 0.4' position='16.2 0.6 -20' /><box style='color:#B38184;' scale='0.4 0.4 0.4' position='16.2 1.0 -20' /><box style='color:#F0B49E;' scale='0.4 0.4 0.4' position='16.2 1.4 -20' /><box style='color:#F7E4BE;' scale='0.4 0.4 0.4' position='16.2 1.8 -20' />    <billboard position="20 1.25 -20" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-18.png' style='max-width: 100%; height: 60px;'> coup de grâce
+          <img src='/images/test-18.png' style='max-width: 100%; height: 60px;'> coup de grâce 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box18' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -2668,41 +3007,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (18== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (18== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (18== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (18== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (18== 3) { 
 		   
-				// alert('hello world =' + 18); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (18== 4) { 
 		   
-				// alert('hello world =' + 18); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -2780,14 +3138,17 @@
 				// alert('hello world =' + 18); 
 				
 			}
-			
 			if (18== 18) { 
 		   
 				// alert('hello world =' + 18); 
 				
 			}
+           if (18== 19) { 
+		   
+				// alert('hello world =' + 18); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
@@ -2797,15 +3158,12 @@
 <box style='color:#99B898;' scale='0.4 0.4 0.4' position='21.2 0.2 -20' /><box style='color:#FECEA8;' scale='0.4 0.4 0.4' position='21.2 0.6 -20' /><box style='color:#FF847C;' scale='0.4 0.4 0.4' position='21.2 1.0 -20' /><box style='color:#E84A5F;' scale='0.4 0.4 0.4' position='21.2 1.4 -20' /><box style='color:#2A363B;' scale='0.4 0.4 0.4' position='21.2 1.8 -20' />    <billboard position="25 1.25 -20" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: -47px; font-size: 1.2em;'>
-          <img src='/images/test-19.png' style='max-width: 100%; height: 60px;'> Dance To Forget
+          <img src='/images/test-19.png' style='max-width: 100%; height: 60px;'> Dance To Forget 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '433'>
-				    <div id='box1' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='433'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box19' height='100%'>
+					  <!-- p style='color: #00FF30'>653 433</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -2815,41 +3173,60 @@
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (19== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (19== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (19== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (19== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (19== 3) { 
 		   
-				// alert('hello world =' + 19); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (19== 4) { 
 		   
-				// alert('hello world =' + 19); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -2927,14 +3304,17 @@
 				// alert('hello world =' + 19); 
 				
 			}
-			
 			if (19== 18) { 
 		   
 				// alert('hello world =' + 19); 
 				
 			}
+           if (19== 19) { 
+		   
+				// alert('hello world =' + 19); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>

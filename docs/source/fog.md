@@ -9,7 +9,7 @@ The fog element controls fog that is present in the scene.
 
 ## Notes
 
-Fog is homogenous and extends to infinity in all directions. It is linear fog with near and far attributes. Some elements (like the skybox) are not affected by the fog and always display with full acuity. It does not make sense to have more than one fog element in a scene. If the fog element is not present, the scene will be without fog. Making the fog the same color as the horizon color of your skybox looks good.
+Fog is homogenous and extends to infinity in all directions. It is linear fog with near and far attributes. Some elements (like the sky) are not affected by the fog and always display with full acuity. It does not make sense to have more than one fog element in a scene. If the fog element is not present, the scene will be without fog. Making the fog the same color as the horizon color of your sky looks good.
 
 ## Sample XML
 
@@ -19,7 +19,7 @@ Fog is homogenous and extends to infinity in all directions. It is linear fog wi
 
 ## Screenshot
 
-<img src="/images/skybox.png" class="screenshot" />
+<img src="/images/sky.png" class="screenshot" />
 
 ## Attributes
 

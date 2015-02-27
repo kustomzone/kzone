@@ -116,7 +116,7 @@ Changes on the server are sent to the clients 5 times a second. On the frames in
 
 ## Simple markup
 
-The markup is straightforward and easy to learn. Use style attributes for styling, linear gradients on your skybox. Rotations are expressed in euler angles as radians (so `rotation="3.14 0 0"` rotates an element 180° around the x axis.) Positions are expressed in meters so `position="0 0 10"` is 10 meters in front of you.
+The markup is straightforward and easy to learn. Use style attributes for styling, linear gradients on your sky. Rotations are expressed in euler angles as radians (so `rotation="3.14 0 0"` rotates an element 180° around the x axis.) Positions are expressed in meters so `position="0 0 10"` is 10 meters in front of you.
 
 ## .obj model support
 

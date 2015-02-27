@@ -1,21 +1,21 @@
-Connector = require("./connector.coffee")
-URI = require("uri-js")
+Connector 	= require('./connector.coffee')
+URI 		= require('uri-js')
 
 Templates = {
-  inQueue : require("../templates/in_queue.jade")
-  unableToConnect : require("../templates/unable_to_connect.jade")
-  instructions : require("../templates/instructions.jade")
-  connecting : require("../templates/connecting.jade")
+  inQueue : 		require('./jade/in_queue.jade')
+  unableToConnect : require('./jade/unable_to_connect.jade')
+  instructions : 	require('./jade/instructions.jade')
+  connecting : 		require('./jade/connecting.jade')
 }
 
 # fixme - do we have to export to window? bit gross.
-window.CANNON = require("cannon")
+window.CANNON 	= require('cannon')
 
-TWEEN = require("tween.js")
-EventEmitter = require('wolfy87-eventemitter');
+TWEEN 			= require('tween')
+EventEmitter 	= require('wolfy87-eventemitter')
+
 DOWN_SAMPLE = 1
 PHYSICS_HZ = 60.0 # Physics hertz
-
 MOBILE = false
 DOWN_SAMPLE = 1
 
@@ -34,10 +34,10 @@ class Client extends EventEmitter
     @stats = new Stats()
     @stats.setMode(0)
 
-    @stats.domElement.style.position = 'absolute';
-    @stats.domElement.style.top = '10px';
-    @stats.domElement.style.zIndex = 110;
-    @stats.domElement.style.left = '10px';
+    @stats.domElement.style.position = 'absolute'
+    @stats.domElement.style.top = '10px'
+    @stats.domElement.style.zIndex = '110'
+    @stats.domElement.style.left = '10px'
 
     @container.append(@stats.domElement)
 
@@ -91,7 +91,7 @@ class Client extends EventEmitter
 
     @raycaster = new THREE.Raycaster
 
-    @container.append( @renderer.domElement );
+    @container.append( @renderer.domElement )
     $(@renderer.domElement).css { width : @width, height : @height }
 
     @tick()
@@ -107,7 +107,7 @@ class Client extends EventEmitter
       if (e.charCode == 'f'.charCodeAt(0)) and @vrrenderer and @controls.enabled
         if @renderer.domElement.mozRequestFullScreen
           @renderer.domElement.mozRequestFullScreen {
-            vrDisplay: vrHMD
+            vrDisplay : vrHMD
           }
         if @renderer.domElement.webkitRequestFullscreen
           @renderer.domElement.webkitRequestFullscreen {
@@ -131,7 +131,7 @@ class Client extends EventEmitter
     document.pointerLockElement || document.mozPointerLockElement || document.webkitPointerLockElement
 
   pointerlockerror: (event) =>
-    alert "[FAIL] There was an error acquiring pointerLock. You will not be able to use sceneserver."
+    alert "[FAIL] There was an error acquiring pointerLock."
 
   pointerlockchange: (event) =>
     if @hasPointerLock()
@@ -234,7 +234,6 @@ class Client extends EventEmitter
 
     # Spawn at the spawn point
     @connector.setPosition(@connector.spawnPosition)
-
 
 
   # Fixme - the .parent tests are all a bit manky...

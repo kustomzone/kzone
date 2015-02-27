@@ -1,19 +1,18 @@
 
-
 var _ 	= require('underscore'),
-Vector 	= require("../js/vector"),
-path 	= require("path");
+Vector 	= require('../js/vector'),
+path 	= require('path');
 
 'use strict';
 
-var IndexScene = function(file){
+var IndexScene = function(file) {
   var self = this;
 
-  self.xml = "<scene><spawn position='0 0 10' /><skybox style='color: linear-gradient(#fff, #99f);' />";
+  self.xml = "<scene><spawn position='0 0 10' /><sky style='color: linear-gradient(#FFEEEE, #8899FF);' />";
 
   var i = 0;
 
-  _.each(file, function(filename){
+  _.each(file, function(filename) {
     var v = new Vector(i * 3,1,0),
       name = path.basename(filename, '.xml'),
       pathname = path.basename(filename);
@@ -28,8 +27,6 @@ var IndexScene = function(file){
   self.xml += "</scene>";
 }
 
-IndexScene.prototype.toXml = function(){
-  return this.xml;
-};
+IndexScene.prototype.toXml = function() { return this.xml; }
 
 module.exports = IndexScene;

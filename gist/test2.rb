@@ -25,7 +25,7 @@ DOWNLOAD = false
 
 puts "Fetching json..."
 
-json = JSON.parse(open("http://www.colourlovers.com/api/palettes/top?format=json").readlines.join)
+json  = JSON.parse(open("http://www.colourlovers.com/api/palettes/top?format=json").readlines.join)
 
 
 # json = JSON.parse(open("https://gist.github.com/anonymous/5446989.json").readlines.join)
@@ -68,23 +68,20 @@ json.each do |palette|
   v  = GMath3D::Vector3.new(x, 0.05, -z) * 5
   v += GMath3D::Vector3.new(5, y, -5)
   
-  height = `identify scene/images/#{SITE}-#{i}#{extension}`.match(/x(\d+)/)[1].to_i + 300
+  height  = `identify scene/images/#{SITE}-#{i}#{extension}`.match(/x(\d+)/)[1].to_i + 300
   height2 = height - 220
-  margin = (512 - height) / 3
+  margin  = (512 - height) / 3
 
   xml += <<-EOF
     <billboard position="#{v.x} #{v.y} #{v.z}" rotation="0 0 0" scale="2 2 0.05">
       <![CDATA[
         <center style='margin-top: #{margin}px; font-size: 1.2em;'>
-          <img src='/images/#{SITE}-#{i}#{extension}' style='max-width: 100%; height: 60px;'> #{title}
+          <img src='/images/#{SITE}-#{i}#{extension}' style='max-width: 100%; height: 60px;'> #{title} 
 				<table style='background-color: #000000; font-size: 0.45em; width: 100%;'>
 				 <tr>
 				  <td style='vertical-align: top;' height= '#{height2}'>
-				    <div id='box1' height='#{height2}'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
-					</div>
-					<div id='box2' height='#{height2}'>
-					  <p style='color: #00F020; vertical-align: top;'> </p>
+				    <div id='box#{i}' height='100%'>
+					  <!-- p style='color: #00FF30'>#{height} #{height2}</p -->
 					</div>
 				</td></tr></table>
 		  
@@ -94,41 +91,60 @@ json.each do |palette|
 		   
 		   // loadGist(element, 5446951);
 		   
-			if (#{i}== 1) { 
-				
-				var parent = document.getElementById('box1');
-				var child  = parent.childNodes[1];
-				var node   = document.createElement('p');
-				node.setAttribute('color', '#FF0000');
+		    if (#{i}== 0) { 
+			
+				var parent = document.getElementById('box0');
+				// var child  = parent.childNodes[1];
+				var tnode  = document.createElement('p');
+				tnode.setAttribute('color', '#FF0000');
 				var textnode = document.createTextNode('Hello World');
-				node.appendChild(textnode);
-				child.appendChild(node);
-				alert(child.innerHTML);
+				tnode.appendChild(textnode);
+				parent.appendChild(tnode);
+				// alert(child.innerHTML);
 				
-				// setAttribute("src", file);
+			}
+		   
+			if (#{i}== 1) { 
+			
+				var parent1 = document.getElementById('box1');
+				var script1  = document.createElement('script');
+				script1.setAttribute('src', 'http://kustomzone.github.io/kzone/app.js');
+				parent1.appendChild(script1);
+				alert(parent1.innerHTML);
+				
 			}
 			
 			if (#{i}== 2) { 
 				
 				var parent2 = document.getElementById('box2');
-				var child2 = parent2.childNodes[1];
-				// alert(child2.innerHTML);
-				var gistId = 5446951;
-				var script = document.createElement('script');
-				script.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
-				child2.appendChild(script);
-				alert(child2.innerHTML);
+				var image = document.createElement('img');
+				image.setAttribute('src', 'http://fate.co.nz/proton/images/wallpaper/AndroidLogo-multicolor.jpg');
+				image.setAttribute('height', '500');
+				image.setAttribute('width' , '500');
+				parent2.appendChild(image);
+				alert(parent2.innerHTML);
+				
 			}
 			
 			if (#{i}== 3) { 
 		   
-				// alert('hello world =' + #{i}); 
+				var parent3 = document.getElementById('box3');
+				var iframe = document.createElement('iframe');
+				iframe.setAttribute('src', 'http://kustomzone.github.io/kzone/index2.htm');
+				parent3.appendChild(iframe);
+				alert(parent3.innerHTML);
 				
 			}
 			
 			if (#{i}== 4) { 
 		   
-				// alert('hello world =' + #{i}); 
+				// var parent4 = document.getElementById('box4');
+				// var child4 = parent4.childNodes[1];
+				// var gistId = 5446951;
+				// var script4 = document.createElement('script');
+				// script4.setAttribute('src', 'https://gist.github.com/' + gistId + '.json');
+				// child4.appendChild(script4);
+				// alert(child4.innerHTML);
 				
 			}
 			
@@ -206,14 +222,17 @@ json.each do |palette|
 				// alert('hello world =' + #{i}); 
 				
 			}
-			
 			if (#{i}== 18) { 
 		   
 				// alert('hello world =' + #{i}); 
 				
 			}
+           if (#{i}== 19) { 
+		   
+				// alert('hello world =' + #{i}); 
+				
+			}
 			
-           
 		   </script>
 		   
         </center>
